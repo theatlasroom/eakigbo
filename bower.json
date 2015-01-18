@@ -3,7 +3,11 @@
   "dependencies": {
     "jquery": "~2.1.0",
     "foundation": "~5.2.0",
-    "imagesloaded": "~3.1.5"
+    "imagesloaded": "~3.1.5",
+    "html5-boilerplate": "~4.3.0",
+    "marionette": "~2.3.0",
+    "fontawesome": "~4.2.0",
+    "less": "~2.1.2"
   },
   "devDependencies": {
     "jquery": "~2.1.0"
