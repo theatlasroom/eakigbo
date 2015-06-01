@@ -10,23 +10,29 @@ I've had the opportunity to work across some interesting areas with a diverse gr
 
 * Verbal and written communication
 * Teamwork
-* User focused design
+* User centered design and UX
 * Responsive design
 * API development
 * Web applications programming
 * Time management / Organisation skills
 * Programming, programming, programming and programming
 
-I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), or documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom).
+I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=q-Ez4c1QfQ0) on the soccer field.
 
 ## Skills and languages
 * Javascript - jQuery, AngularJS, BackboneJS + marionette, nodejs (minimally)
 * PHP - API development, Laravel, Codeigniter
 * Responsive Web Design / HTML5 / CSS3 - Bootstrap, Foundation, SASS, LESS
 * MySQL / Postgresql / MongoDB (minimally)
-* Web application development
-* Tools - GIT (github, bitbucket), Gulpjs, bash
-* Processing framework (Java) / openFrameworks (C++)
+* Web application development - RESTful API development, frontend development
+* Tools - GIT (github, bitbucket), Bower, Gulpjs, grunt, composer, bash
+* Testing - PHPUnit, Codeception, Protractor, Karma, Jasmine
+* Creative coding - Processing framework (Java) / openFrameworks (C++) / Supercollider
+
+### Education
+
+Bachelor of Computer Science (2006 – 2010)
+The University of Newcastle, NSW
 
 ## Work history
 
@@ -50,7 +56,7 @@ La Trobe University
 * Skills Essentials (2013) - Developing reusable, responsive, mobile-first activities for e-learning
 * Educational resources development (Continually reviewed) - Multimedia production, adobe flash and captivate development
 
-#### Key esponsibilities
+#### Key responsibilities
 * Contributing to maintaining the quality of Library web services according to the University and Library standards
 * Working collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
 * Exploring and prototyping emerging trends in web technologies and making recommendations in the context of Library's clients
@@ -81,10 +87,5 @@ University of Newcastle
 Woolworths
 
 * Front line customer service
-
-### Education
-
-Bachelor of Computer Science (2006 – 2010)
-The University of Newcastle, NSW
 
 > Please think of the trees and don't print this unless you absolutely have to :)
