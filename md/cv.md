@@ -1,46 +1,63 @@
-CV
+CV - Ezekiel Angbashim Kigbo Jr.
 ============================================================================================================================================
-
-## About Me
-
-### Ezekiel Angbashim Kigbo Jr.
-
 <mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
 
-I am a keen web designer/developer interested in utilising cutting edge tools and techniques to deliver the best possible user experiences.
+I am a full stack developer with a keen interest in crafting meaningful web based applications.
 
-Through various projects both for work and personally, I have had access to many aspects of web developemnt including requirements gathering, user interface design, maintenance and upgrading of existing systems and front and back end development with a wide range of tools and environments.
+Pushing the envelope, getting dirty with code, understanding clients, providing solutions that are user focused and championing cutting edge design are my passions.
 
-I have taken particular interest in front end web design and development and am constantly looking for opportunities to seek out and incorporate cutting edge technology to help design the simplest and most effective experiences for clients.
+I've had the opportunity to work across some interesting areas with a diverse group of people, allowing me to grow my skills in areas such as:
 
-Some of the skills I have acquired and continually look to improve include:
-
-* User focused design
-* Front &amp; back end web development
-* Developing Standards based / Cross browser / Accessible websites
-* Database design
-* Developing for mobile devices / Responsive design
-* Applications programming
 * Verbal and written communication
-* Time management / Organization
-* Working with Microsoft office suite (or similar)
-* Working with Adobe CS products
-* Customer service
+* Teamwork
+* User focused design
+* Responsive design
+* API development
+* Web applications programming
+* Time management / Organisation skills
+* Programming, programming, programming and programming
 
-I also enjoy pursuing my passion for photography, audio experimentation as [The Atlas Room](http://soundcloud.com/theatlasroom) and football (soccer). Of particular interest, I am excited at the unique experiences that can be created from the synthesis of computer programming with sound, images and the real world.
+I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), or documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom).
 
-## Work
+## Skills and languages
+* Javascript - jQuery, AngularJS, BackboneJS + marionette, nodejs (minimally)
+* PHP - API development, Laravel, Codeigniter
+* Responsive Web Design / HTML5 / CSS3 - Bootstrap, Foundation, SASS, LESS
+* MySQL / Postgresql / MongoDB (minimally)
+* Web application development
+* Tools - GIT (github, bitbucket), Gulpjs, bash
+* Processing framework (Java) / openFrameworks (C++)
 
-### Library Online Communications Officer (2011 – Present)
+## Work history
+
+### Freelancing (2010 - Present)
+* [SquareAway](https://github.com/SquareAway) - Full stack development
+* [HaleyK](http://www.haleyk.com/) - Design & Development
+* [LogoLogix](http://logologix.com.au/) - Development
+* [Seascape Design & Drafting](http://www.seascapedrafting.com/) - Development
+* [MervDesign](http://mervdesign.com/) - Development
+* [Negative Films](http://www.negativefilms.net/) - Development
+
+### Coordinator - Online development (2011 – Present)
 
 La Trobe University
 
-* Assist in coordinating the creation of content for and maintenance of the Library website and staff intranet (Sharepoint) site.
-* Contribute to maintaining the quality of Library web services according to the University and Library standards.
-* Assist in ensuring Library web services meet the strategic directions of the Library.
-* Work collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
-* Seek out and prototype emerging trends in online communications and technologies, and make recommendations on application in the context of Library communications and promotions.
-* Participate in relevant committees and groups in the Library and/or University in order to contribute to the development of the University website and to ensure that the Library website complies with University guidelines and policies.
+#### Major projects
+* Library system implementation (2014-2015) - Assisted with UX and implementation, integrating systems and content, providing solutions to technical challenges
+* Training system for students, staff and internal staff (Continually reviewed) - UX, Testing, UI and development
+* Academic referencing tool (Continually reviewed) - UX, Testing, UI and development
+* Library website redevelopment (2013?) - Working within a team to assist with Information architecture, UX, Testing, Implementation
+* Skills Essentials (2013) - Developing reusable, responsive, mobile-first activities for e-learning
+* Educational resources development (Continually reviewed) - Multimedia production, adobe flash and captivate development
+
+#### Key esponsibilities
+* Contributing to maintaining the quality of Library web services according to the University and Library standards
+* Working collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
+* Exploring and prototyping emerging trends in web technologies and making recommendations in the context of Library's clients
+* Assisting in ensuring Library web services meet the strategic directions of the Library.
+* Assisting in coordinating the creation of content for and maintenance of the Library website and staff intranet (Sharepoint) site.
+* Managing multiple projects
+* Participation in various committees and working groups
 
 ### Web Productions Officer (2009 – 2011)
 
@@ -65,19 +82,9 @@ Woolworths
 
 * Front line customer service
 
-### Programming Languages / Frameworks
-
-I have experience working with the following programming languages / frameworks / tools through a mixture of personal interest, my studies and working on real world projects.
-
-* HTML5 / CSS3 / Javascript
-* jQuery / Sass / Bootstrap
-* PHP / JSP
-* MYSQL / XML / JSON
-* Java / C++
-* Apache web server / Apache Tomcat server
-* Processing framework (Java) / openFrameworks (C++)
-
 ### Education
 
 Bachelor of Computer Science (2006 – 2010)
 The University of Newcastle, NSW
+
+> Please think of the trees and don't print this unless you absolutely have to :)
