@@ -25,7 +25,7 @@ Some of the skills I have acquired and continually look to improve include:
 * Time management / Organization
 * Working with Microsoft office suite (or similar)
 * Working with Adobe CS products
-* Customer service	
+* Customer service
 
 I also enjoy pursuing my passion for photography, audio experimentation as [The Atlas Room](http://soundcloud.com/theatlasroom) and football (soccer). Of particular interest, I am excited at the unique experiences that can be created from the synthesis of computer programming with sound, images and the real world.
 
@@ -49,7 +49,7 @@ Centre for Teaching &amp; Learning, University of Newcastle
 * Managing and coordinating the production of web-based promotional and informative materials associated with the Centre’s core operations, for both staff and students, in collaboration with the University’s Corporate Information Division.
 * Ongoing maintenance of all web-based resources for the centre
 * Manage communication and information dissemination projects by designing and developing web-based materials associated with the Centre’s core operations.
-* Coordinate the web-based projects to promote and inform the University and broader community about all teaching and learning events and achievements.	
+* Coordinate the web-based projects to promote and inform the University and broader community about all teaching and learning events and achievements.
 
 ### Library Information Common Rover (2007 – 2009)
 
@@ -80,4 +80,4 @@ I have experience working with the following programming languages / frameworks 
 ### Education
 
 Bachelor of Computer Science (2006 – 2010)
-The University of Newcastle, NSW				
+The University of Newcastle, NSW
