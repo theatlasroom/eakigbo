@@ -19,7 +19,7 @@ I've had the opportunity to work across some interesting areas with a diverse gr
 
 I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=q-Ez4c1QfQ0) on the soccer field.
 
-## Skills and languages
+## Key skills
 * Javascript - jQuery, AngularJS, BackboneJS + marionette, nodejs (minimally)
 * PHP - API development, Laravel, Codeigniter
 * Responsive Web Design / HTML5 / CSS3 - Bootstrap, Foundation, SASS, LESS
@@ -29,7 +29,7 @@ I am constantly looking to grow, professionally and personally, so when i'm not 
 * Testing - PHPUnit, Codeception, Protractor, Karma, Jasmine
 * Creative coding - Processing framework (Java) / openFrameworks (C++) / Supercollider
 
-### Education
+## Education
 
 Bachelor of Computer Science (2006 – 2010)
 The University of Newcastle, NSW
@@ -87,5 +87,8 @@ University of Newcastle
 Woolworths
 
 * Front line customer service
+
+## References
+References can be provided upon request.
 
 > Please think of the trees and don't print this unless you absolutely have to :)
