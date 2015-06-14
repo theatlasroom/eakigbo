@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  header
+    h1= title
+  #main
+    include:markdown ../md/about.md
+    include:markdown ../md/cv.md
+  footer
+    ul
+      li Twitter
+      li LinkedIn
+      li GitHub
+      li SoundCloud
+      li Medium
+      li StackOverflow
+      li Email
