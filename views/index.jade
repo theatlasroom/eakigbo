@@ -1,17 +1,53 @@
 extends layout
 
 block content
-  header
-    h1= title
-  #main
-    include:markdown ../md/about.md
-    include:markdown ../md/cv.md
-  footer
-    ul
-      li Twitter
-      li LinkedIn
-      li GitHub
-      li SoundCloud
-      li Medium
-      li StackOverflow
-      li Email
+  #container
+    header
+      h1= title
+    #main
+      section#about
+        include:markdown ../md/about.md
+      section#cv-trigger
+        button.icon-btn
+          span(class="fa fa-2x fa-rocket")
+          span(class="btn-label") CV
+      section#cv
+        include:markdown ../md/cv.md
+    footer
+      a(href="mailto:theatlasroom@gmail.com") theatlasroom@gmail.com #[span(class="fa fa-envelope")]
+      ul#social
+        li
+          a(href="http://twitter.com/theatlasroom") #[span(class="social-label") Twitter] #[span(class="fa fa-2x fa-twitter")]
+        li
+          a(href="http://instagram.com/theatlasroom") #[span(class="social-label") Instagram] #[span(class="fa fa-2x fa-instagram")]
+        li
+          a(href="https://au.linkedin.com/in/theatlasroom") #[span(class="social-label") LinkedIn] #[span(class="fa fa-2x fa-linkedin")]
+        li
+          a(href="http://github.com/theatlasroom") #[span(class="social-label") GitHub] #[span(class="fa fa-2x fa-github")]
+        li
+          a(href="http://soundcloud.com/theatlasroom") #[span(class="social-label") SoundCloud] #[span(class="fa fa-2x fa-soundcloud")]
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-28194714-1', 'auto');
+    ga('send', 'pageview');
+  script(type="application/ld+json").
+    { "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Ezekiel Kigbo",
+      "url" : "http://eakigbo.me",
+      "sameAs" : [
+          "http://facebook.com/theatlasroom",
+          "http://twitter.com/theatlasroom",
+          "http://instagram.com/theatlasroom",
+          "http://github.com/theatlasroom",
+          "http://www.linkedin.com/in/theatlasroom",
+          "http://theatlasroom.bandcamp.com",
+          "http://soundcloud.com/theatlasroom",
+          "https://medium.com/@theatlasroom",
+          "http://stackoverflow.com/users/2490067/theatlasroom"
+        ]
+    }

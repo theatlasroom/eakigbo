@@ -1,17 +1,27 @@
 doctype html
-html
+html(class="no-js")
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Full Stack Developer based in Melbourne')
+    meta(name='keywords', content='Full Stack, Developer, Melbourne, js, php, frontend, css, web')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title= title
+    script(src="//use.typekit.net/sxb8zcp.js")
+    script.
+      try{Typekit.load();}catch(e){}
     - if(environment === 'development') {
         script(src='/bower_components/modernizr/modernizr.js')
         link(rel='stylesheet', href='/bower_components/foundation/css/normalize.min.css')
         link(rel='stylesheet', href='/bower_components/foundation/css/foundation.min.css')
+        link(rel='stylesheet', href='/bower_components/fontawesome/css/font-awesome.min.css')
         script(src='/bower_components/jquery/dist/jquery.min.js')
         script(src='/bower_components/foundation/js/foundation.min.js')
         script(src='/bower_components/vue/dist/vue.min.js')
     - } else {
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css')
+        link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
         script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
         script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
         script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js')

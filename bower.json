@@ -7,6 +7,7 @@
   "devDependencies": {
     "foundation": "~5.5.2",
     "vue": "~0.11.10",
-    "page.js": "~1.6.3"
+    "page.js": "~1.6.3",
+    "fontawesome": "~4.3.0"
   }
 }
