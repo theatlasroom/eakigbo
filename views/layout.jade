@@ -2,13 +2,20 @@ doctype html
 html
   head
     title= title
-    script(src='/bower_components/modernizr/modernizr.js')
-    link(rel='stylesheet', href='/bower_components/foundation/css/normalize.min.css')
-    link(rel='stylesheet', href='/bower_components/foundation/css/foundation.min.css')
+    - if(environment === 'development') {
+      script(src='/bower_components/modernizr/modernizr.js')
+      link(rel='stylesheet', href='/bower_components/foundation/css/normalize.min.css')
+      link(rel='stylesheet', href='/bower_components/foundation/css/foundation.min.css')
+      script(src='/bower_components/jquery/dist/jquery.min.js')
+      script(src='/bower_components/foundation/js/foundation.min.js')
+      script(src='/bower_components/vue/dist/vue.min.js')
+    - } else {
+      link(rel='stylesheet', href='/stylesheets/libs.min.css')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/vue/0.12.0/vue.min.js')
+    - }
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/bower_components/jquery/dist/jquery.min.js')
-    script(src='/bower_components/foundation/js/foundation.min.js')
-    script(src='/bower_components/vue/dist/vue.min.js')
     script(src='/javascripts/main.js')
   body
     block content
