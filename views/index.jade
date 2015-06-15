@@ -3,7 +3,7 @@ extends layout
 block content
   #container
     header
-      h1 Ezekiel Kigbo      
+      h1 Ezekiel Kigbo
     #main
       section#about
         include:markdown ../md/about.md
@@ -14,7 +14,7 @@ block content
       section#cv
         include:markdown ../md/cv.md
     footer
-      a(href="mailto:theatlasroom@gmail.com") theatlasroom@gmail.com #[span(class="fa fa-envelope")]
+      a.btn-primary(href="mailto:theatlasroom@gmail.com") Contact me #[span(class="fa fa-envelope")]
       ul#social
         li
           a(href="http://twitter.com/theatlasroom") #[span(class="social-label") Twitter] #[span(class="fa fa-2x fa-twitter")]
