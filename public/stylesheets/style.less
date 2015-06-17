@@ -12,6 +12,12 @@
 @font-size-medium: 12pt;
 @font-size-small: 10pt;
 
+/*
+* Needs cleanup
+* - remove old styles
+* - reorder
+*/
+
 .vertical-centered {
   height:100%;
   display: flex;
@@ -30,7 +36,7 @@
 a {
   color:@col-text;
   //text-decoration: underline;
-  border-bottom:solid @col-primary 0.05rem;
+  border-bottom:solid @col-primary 0.1rem;
   font-weight:bold;
   &:hover {
     color:@col-secondary;
@@ -50,20 +56,14 @@ html.loading {
 .flexbox {
   #container {
     //display:flex;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    -webkit-box-pack: center;
     -moz-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
     -moz-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
+    justify-content: center;
     align-items: center;
     flex-direction:column;
     padding:3.25rem 0 0 0;
@@ -168,13 +168,7 @@ body {
 
 
 #container {
-  //.vertical-centered;
   border-top:solid 0.5rem @col-primary;
-  //margin:0;
-  //padding:5rem 2.5rem;
-  //height:100vh;
-  //display:table;
-  //width:100%;
 }
 
 header, #main, footer {
@@ -199,7 +193,8 @@ header {
     // display:none;
   }
   #cv-trigger {
-    .centered; margin:1.75rem auto;
+    //text-align:center;
+    //.centered; margin:1.75rem auto;
   }
 }
 
@@ -210,7 +205,7 @@ footer {
   .centered;
   a {border:none;}
   #social {
-    font-size:small;
+    font-size:x-small;
     li {
       display:inline-block;
       list-style-type:none;
@@ -232,7 +227,9 @@ footer {
   padding:0.5rem 1rem;
 }
 
-button.icon-btn {
+.icon-btn {
+  display:inline-block;
+  padding-top:0.75rem;
   span {display:block;}
   span.btn-label {font-size:smaller;}
   background:none;
@@ -249,6 +246,10 @@ button.icon-btn {
     #container {padding:7.5rem 0 0 0;}
     header, footer {width:90%;}
     footer {margin-top:3rem;}
+  }
+
+  a {
+    border-bottom:solid @col-primary 0.05rem;
   }
 }
 
