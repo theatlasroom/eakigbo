@@ -152,7 +152,6 @@ body {
 #container::after {
   content: "";
   /* full size bg image */
-  background: url(../images/me-crop.png) no-repeat center center;
   background-repeat:no-repeat;
   background-position: center center;
   background-attachment:scroll;
@@ -258,6 +257,32 @@ footer {
      content:" <" attr(href) "> ";
   }*/
 }
+
+// Responsive images
+@media all and (min-width: 0px){
+  #container::after {
+    background-image: url(../dist/images/me-crop-480.png);
+  }
+}
+
+@media all and (min-width: 480px){
+  #container::after {
+    background-image: url(../dist/images/me-crop-768.png);
+  }
+}
+
+@media all and (min-width: 768px){
+  #container::after {
+    background-image: url(../dist/images/me-crop-1440.png);
+  }
+}
+
+@media all and (min-width: 1440px){
+  #container::after {
+    background-image: url(../dist/images/me-crop.png);
+  }
+}
+// general media queries
 
 @media all and (min-width: 20em) {
   html {font-size:@font-size-medium;}
