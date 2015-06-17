@@ -1,0 +1,1 @@
+function init(){console.log("Loading")}function loadBackgroundImage(){var n=new Image;n.src="/images/me-crop.png";var o=setInterval(function(){n.complete&&(clearInterval(o),console.log($("#container")),$("#container:after").css({"background-image":"url(' + img.src + ')"}),console.log("Loaded"))},50)}$(function(){$(document).foundation(),init()});
