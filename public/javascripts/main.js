@@ -2,10 +2,49 @@
 * Main js file
 */
 
+var cv_open_flag = false;
+
 $(function(){
   $(document).foundation();
   init();
 
+  var $header = $("header");
+  var $cv = $("#cv");
+  var $about = $("#about");
+
+  var $cv_trigger = $("#cv-trigger");
+  var $rocket = $("#cv-trigger .fa-rocket");
+
+  $rocket.on('mouseover', function(e){
+    e.preventDefault();
+    $rocket
+      .velocity("stop", "rocket")
+      .velocity({
+        rotateZ: "180deg"
+      });
+  });
+
+  $rocket.on('mouseout', function(e){
+    e.preventDefault();
+    $rocket.velocity("stop", "rocket").velocity('reverse');
+  });
+
+  $("#cv-trigger a").on('click', function(e){
+    e.preventDefault();
+    cv_open_flag = !cv_open_flag; // flip the state
+    if (cv_open_flag){
+      $about.fadeToggle();
+      $cv.velocity("transition.slideUpIn", { display: "block" },  "easeInSine");
+      $header.velocity({
+        top: "-3rem",
+      });
+    }
+    else {
+      $cv.velocity("transition.slideDownOut", { display: "none" }, "easeInSine");
+      $about.fadeToggle();
+      $header.velocity({top: "0",});
+    }
+  });
 });
 
 

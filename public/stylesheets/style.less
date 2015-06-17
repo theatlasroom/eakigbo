@@ -36,7 +36,7 @@
 a {
   color:@col-text;
   //text-decoration: underline;
-  border-bottom:solid @col-primary 0.1rem;
+  border-bottom:solid @col-primary 1px;
   font-weight:bold;
   &:hover {
     color:@col-secondary;
@@ -66,7 +66,7 @@ html.loading {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    padding:3.25rem 0 0 0;
+    padding:2.75rem 0 0 0;
   }
 
   header, footer {
@@ -74,6 +74,7 @@ html.loading {
   }
 
   header, #main, footer, #loader {
+    position:relative;
     margin:0 auto;
   }
 
@@ -133,6 +134,8 @@ body {
     #cv {
       display:none;
       text-align:left;
+      h1 {display:none;}
+      #fake-cv-header h1 {display:block;}
       h1, h2, h3, h4, h5, h6, ul, ol, p, blockquote {color:@col-bg;}
       blockquote {
         border-left:solid @col-primary 0.25rem;
@@ -193,6 +196,7 @@ header {
     // display:none;
   }
   #cv-trigger {
+    margin-bottom:2rem;
     //text-align:center;
     //.centered; margin:1.75rem auto;
   }
@@ -240,10 +244,25 @@ footer {
   border-radius:50%;
 }
 
+#print {
+  text-align:right;
+}
+
+@media print {
+  /*article a {
+     font-weight: bolder;
+     text-decoration: none;
+  }
+
+  article a[href^=http]:after {
+     content:" <" attr(href) "> ";
+  }*/
+}
+
 @media all and (min-width: 20em) {
   html {font-size:@font-size-medium;}
   .flexbox {
-    #container {padding:7.5rem 0 0 0;}
+    #container {padding:6.5rem 0 0 0;}
     header, footer {width:90%;}
     footer {margin-top:3rem;}
   }

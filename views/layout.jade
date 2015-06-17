@@ -7,6 +7,7 @@ html(class="no-js")
     meta(name='keywords', content='Full Stack, Developer, Melbourne, js, php, frontend, css, web')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title= title
+    script(src="//use.typekit.net/sxb8zcp.js")
     script.
       try{Typekit.load();}catch(e){}
     - if(environment === 'development') {
@@ -18,8 +19,8 @@ html(class="no-js")
         script(src='/bower_components/jquery/dist/jquery.min.js')
         script(src='/bower_components/foundation/js/foundation.min.js')
         script(src='/bower_components/velocity/velocity.min.js')
+        script(src='/bower_components/velocity/velocity.ui.min.js')
     - } else {
-        script(src="//use.typekit.net/sxb8zcp.js")
         link(rel="stylesheet", href="http://css-spinners.com/css/spinner/hexdots.css" type="text/css")
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css')
@@ -28,6 +29,7 @@ html(class="no-js")
         script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
         script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js')
         script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
+        script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js")
     - }
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/main.js')
