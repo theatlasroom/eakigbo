@@ -14,8 +14,9 @@ block content
       section#cv
         include:markdown ../md/cv.md
     footer
-      a.btn-primary(href="mailto:theatlasroom@gmail.com") Contact me #[span(class="fa fa-envelope")]
       ul#social
+        li
+          a(href="mailto:theatlasroom@gmail.com") #[span(class="social-label") Contact me] #[span(class="fa fa-2x fa-envelope")]
         li
           a(href="http://twitter.com/theatlasroom") #[span(class="social-label") Twitter] #[span(class="fa fa-2x fa-twitter")]
         li
@@ -26,6 +27,10 @@ block content
           a(href="http://github.com/theatlasroom") #[span(class="social-label") GitHub] #[span(class="fa fa-2x fa-github")]
         li
           a(href="http://soundcloud.com/theatlasroom") #[span(class="social-label") SoundCloud] #[span(class="fa fa-2x fa-soundcloud")]
+    #loader
+      #spinner
+        .hexdots-loader Loading&hellip;
+      h1.loader-text Loading
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

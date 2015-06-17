@@ -37,7 +37,7 @@ The University of Newcastle, NSW
 ## Work history
 
 ### Freelancing (2010 - Present)
-* [SquareAway](https://github.com/SquareAway) - Full stack development
+* [SquareAway](http://squareaway.com) - Full stack development
 * [HaleyK](http://www.haleyk.com/) - Design & Development
 * [LogoLogix](http://logologix.com.au/) - Development
 * [Seascape Design & Drafting](http://www.seascapedrafting.com/) - Development
