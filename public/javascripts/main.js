@@ -1,74 +1,99 @@
+'use strict';
 /**
 * Main js file
 */
 
-var cv_open_flag = false;
+(function(window, $){
 
-$(function(){
-  $(document).foundation();
-  init();
+  var cv_open_flag = false;
+  var ui = {};
 
-  var $header = $("header");
-  var $cv = $("#cv");
-  var $about = $("#about");
+  $(function(){
+    ui.$header = $("header");
+    ui.$main = $("main");
+    ui.$footer = $("footer");
+    ui.$cv = $("#cv");
+    ui.$print_a = $("#print a");
+    ui.$about = $("#about");
+    ui.$cv_trigger = $("#cv-trigger");
+    ui.$cv_trigger_a = $("#cv-trigger a");
+    ui.$rocket = $("#cv-trigger .fa-rocket");
 
-  var $cv_trigger = $("#cv-trigger");
-  var $rocket = $("#cv-trigger .fa-rocket");
+    $(document).foundation();
 
-  $rocket.on('mouseover', function(e){
-    e.preventDefault();
-    $rocket
-      .velocity("stop", "rocket")
-      .velocity({
-        rotateZ: "180deg"
-      });
-  });
+    var rocket_trigger = {};
+    // check for touch
+    rocket_trigger.grow = ((Modernizr.touch)) ? 'touchstart' : 'mouseenter';
+    rocket_trigger.shrink = ((Modernizr.touch)) ? 'touchend' : 'mouseleave';
 
-  $rocket.on('mouseout', function(e){
-    e.preventDefault();
-    $rocket.velocity("stop", "rocket").velocity('reverse');
-  });
+    // ui bindings
+    ui.$cv_trigger_a.on(rocket_trigger.grow, function(e){
+      e.preventDefault();
+      ui.$cv_trigger_a
+        .velocity('stop')
+        .velocity({
+          scaleX:"1.35",
+          scaleY:"1.35",
+          top: "+2.5em"
+        });
+      ui.$rocket
+        .velocity('stop')
+        //.velocity("stop", "rocket")
+        .velocity({
+          rotateZ: "180deg"
+        });
+    });
 
-  $("#cv-trigger a").on('click', function(e){
-    e.preventDefault();
-    cv_open_flag = !cv_open_flag; // flip the state
-    if (cv_open_flag){
-      $about.fadeToggle();
-      $cv.velocity("transition.slideUpIn", { display: "block" },  "easeInSine");
-      $header.velocity({
-        top: "-3rem",
-      });
-    }
-    else {
-      $cv.velocity("transition.slideDownOut", { display: "none" }, "easeInSine");
-      $about.fadeToggle();
-      $header.velocity({top: "0",});
-    }
-  });
-});
+    ui.$cv_trigger_a.on(rocket_trigger.shrink, function(e){
+      e.preventDefault();
+      ui.$cv_trigger_a
+        .velocity('stop')
+        .velocity({
+          scaleX:"1",
+          scaleY:"1",
+          top: "-2.5em"
+        });
+      ui.$rocket
+        .velocity('stop')
+        //.velocity("stop", "rocket")
+        .velocity({
+          rotateZ: "0deg"
+        });
+    });
 
-
-function init(){
-  console.log("Loading");
-  // init function - runs on app start
-  //loadBackgroundImage();
-}
-
-function loadBackgroundImage(){
-  var img = new Image();
-      img.src = '/images/me-crop.png';
-
-  var int = setInterval(function() {
-      if (img.complete) {
-          clearInterval(int);
-          //console.log(document.getElementById('container'));
-          //document.getElementById('container')[0].style.backgroundImage = 'url(' + img.src + ')';
-          console.log($("#container"));
-          $("#container:after").css({
-            'background-image':"url(' + img.src + ')"
-          });
-          console.log("Loaded");
+    ui.$cv_trigger_a.on('click', function(e){
+      e.preventDefault();
+      cv_open_flag = !cv_open_flag; // flip the state
+      if (cv_open_flag){
+        ui.$about.fadeToggle();
+        ui.$cv.velocity("transition.slideUpIn", { display: "block" },  "easeInSine");
+        ui.$header.velocity({
+          top: "-3rem",
+        });
       }
-  }, 50);
+      else {
+        ui.$cv.velocity("transition.slideDownOut", { display: "none" }, "easeInSine");
+        ui.$about.fadeToggle();
+        ui.$header.velocity({top: "0",});
+      }
+    });
 
-}
+    ui.$print_a.on('click', function(){
+      window.print();
+    });
+
+    init();
+  });
+
+  function init(){
+    var elems = [ui.$header, ui.$main, ui.$footer];
+    // init function - runs on app start
+    ui.$header.velocity("transition.slideDownIn", {delay: 500, queue: 'init'});
+    ui.$main.velocity("transition.slideLeftIn", {delay: 1000, queue: 'init'});
+    ui.$footer.velocity("transition.slideUpIn", {delay: 1500, queue: 'init'});
+    // run the animations
+    $.each(elems, function(k){
+      elems[k].dequeue('init');
+    });
+  }
+})(window, jQuery);

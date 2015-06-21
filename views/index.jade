@@ -4,13 +4,13 @@ block content
   #container
     header
       h1 Ezekiel Kigbo
-    #main
+    main.content
       section#about
         include:markdown ../md/about.md
       section#cv-trigger
         a.icon-btn
           span(class="fa fa-2x fa-rocket")
-          span(class="btn-label") CV
+          span(class="btn-label") View CV
       section#cv
         #fake-cv-header
           #print
@@ -31,10 +31,11 @@ block content
           a(href="http://github.com/theatlasroom") #[span(class="social-label") GitHub] #[span(class="fa fa-2x fa-github")]
         li
           a(href="http://soundcloud.com/theatlasroom") #[span(class="social-label") SoundCloud] #[span(class="fa fa-2x fa-soundcloud")]
-    #loader
-      #spinner
-        .hexdots-loader Loading&hellip;
-      h1.loader-text Loading
+  //
+    section#back-to-top
+      a.icon-btn
+        span(class="fa fa-2x fa-chevron-up")
+        span(class="btn-label") Top
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
