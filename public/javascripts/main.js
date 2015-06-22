@@ -21,44 +21,15 @@
 
     $(document).foundation();
 
-    var rocket_trigger = {};
-    // check for touch
-    rocket_trigger.grow = ((Modernizr.touch)) ? 'touchstart' : 'mouseenter';
-    rocket_trigger.shrink = ((Modernizr.touch)) ? 'touchend' : 'mouseleave';
-
     // ui bindings
-    ui.$cv_trigger_a.on(rocket_trigger.grow, function(e){
+    ui.$cv_trigger_a.on('mouseenter', function(e){
       e.preventDefault();
-      ui.$cv_trigger_a
-        .velocity('stop')
-        .velocity({
-          scaleX:"1.35",
-          scaleY:"1.35",
-          top: "+2.5em"
-        });
-      ui.$rocket
-        .velocity('stop')
-        //.velocity("stop", "rocket")
-        .velocity({
-          rotateZ: "180deg"
-        });
+      if (!cv_open_flag) growRocket();
     });
 
-    ui.$cv_trigger_a.on(rocket_trigger.shrink, function(e){
+    ui.$cv_trigger_a.on('mouseleave', function(e){
       e.preventDefault();
-      ui.$cv_trigger_a
-        .velocity('stop')
-        .velocity({
-          scaleX:"1",
-          scaleY:"1",
-          top: "-2.5em"
-        });
-      ui.$rocket
-        .velocity('stop')
-        //.velocity("stop", "rocket")
-        .velocity({
-          rotateZ: "0deg"
-        });
+      if (!cv_open_flag) shrinkRocket();
     });
 
     ui.$cv_trigger_a.on('click', function(e){
@@ -70,11 +41,13 @@
         ui.$header.velocity({
           top: "-3rem",
         });
+        if (Modernizr.touch) growRocket();
       }
       else {
         ui.$cv.velocity("transition.slideDownOut", { display: "none" }, "easeInSine");
         ui.$about.fadeToggle();
         ui.$header.velocity({top: "0",});
+        if (Modernizr.touch) shrinkRocket();
       }
     });
 
@@ -95,5 +68,37 @@
     $.each(elems, function(k){
       elems[k].dequeue('init');
     });
+  }
+
+  function growRocket(){
+    ui.$cv_trigger_a
+      .velocity('stop')
+      .velocity({
+        scaleX:"1.35",
+        scaleY:"1.35",
+        top: "+2.5em"
+      });
+    ui.$rocket
+      .velocity('stop')
+      //.velocity("stop", "rocket")
+      .velocity({
+        rotateZ: "180deg"
+      });
+  }
+
+  function shrinkRocket(){
+    ui.$cv_trigger_a
+      .velocity('stop')
+      .velocity({
+        scaleX:"1",
+        scaleY:"1",
+        top: "-2.5em"
+      });
+    ui.$rocket
+      .velocity('stop')
+      //.velocity("stop", "rocket")
+      .velocity({
+        rotateZ: "0deg"
+      });
   }
 })(window, jQuery);
