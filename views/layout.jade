@@ -12,7 +12,7 @@ html(class="no-js")
       try{Typekit.load();}catch(e){}
     - if(environment === 'development') {
         script(src='/bower_components/modernizr/modernizr.js')
-        link(rel="stylesheet", href="http://css-spinners.com/css/spinner/hexdots.css" type="text/css")
+        //link(rel="stylesheet", href="http://css-spinners.com/css/spinner/hexdots.css" type="text/css")
         link(rel='stylesheet', href='/bower_components/foundation/css/normalize.min.css')
         link(rel='stylesheet', href='/bower_components/foundation/css/foundation.min.css')
         link(rel='stylesheet', href='/bower_components/fontawesome/css/font-awesome.min.css')
@@ -23,7 +23,7 @@ html(class="no-js")
         script(src='/bower_components/velocity/velocity.ui.min.js')
         script(src='/javascripts/main.js')
     - } else {
-        link(rel="stylesheet", href="http://css-spinners.com/css/spinner/hexdots.css" type="text/css")
+        //link(rel="stylesheet", href="http://css-spinners.com/css/spinner/hexdots.css" type="text/css")
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css')
         link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
@@ -33,7 +33,7 @@ html(class="no-js")
         script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js')
         script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
         script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js")
-        script(src='/dist/js/main.js')        
+        script(src='/dist/js/main.js')
     - }
   body
     block content

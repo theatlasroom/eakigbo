@@ -10,4 +10,11 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/cv', function(req, res, next) {
+  res.render('index', {
+    title: 'Ezekiel Kigbo | Full Stack Developer - Melbourne',
+    environment: app.get('env')
+  });
+});
+
 module.exports = router;
