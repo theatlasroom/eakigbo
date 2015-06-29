@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  #container
+    header
+      h1 Ezekiel Kigbo
+    main.content
+      section#about
+        include:markdown ../md/about.md
+      section#cv-trigger
+        a.icon-btn
+          span(class="fa fa-2x fa-rocket")
+          span(class="btn-label") View Cover Letter
+      section#cv
+        #fake-cv-header
+          #print
+            a(class="fa fa-print")&nbsp;Print
+          h1 cv
+        include:markdown ../md/cover-letter.md
