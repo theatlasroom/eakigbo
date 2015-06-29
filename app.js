@@ -9,6 +9,10 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+// add caching for static assests
+var staticAsset = require('static-asset');
+app.use(staticAsset(__dirname + "/public/") );
+app.use(express.static(__dirname + "/public/") );
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
