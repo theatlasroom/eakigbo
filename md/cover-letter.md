@@ -1,7 +1,7 @@
-CV - Ezekiel Angbashim Kigbo Jr
+Cover Letter - Ezekiel Angbashim Kigbo Jr
 ============================================================================================================================================
 
-**Portfolio: http://eakigbo.me**
+**Portfolio: eakigbo.me**<br/>
 **Email: theatlasroom@gmail.com**
 
 I am a full stack developer with a keen interest in crafting meaningful web based applications. I am constantly looking to grow, professionally and personally and am always keen to take on new challenges and learn from others.
