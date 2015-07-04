@@ -25,6 +25,11 @@ html {
   font-size:@font-size-small;
 }
 
+// fix the containers if we dont have legacy flexbox support - fix for IE
+html.no-flexboxlegacy {
+  #container, body {display:block;}
+}
+
 html.js {
   header, main, footer {display:none;}
 }

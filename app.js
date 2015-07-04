@@ -23,14 +23,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
 
 // Serve bower files
-app.use(express.static(__dirname + '/public'));
-app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+// set the cache for static files
+app.use(express.compress());
+var longCache = 86400000 * 30; // cache for 30 days (in ms)
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
+app.use('/bower_components',  express.static(__dirname + '/bower_components', { maxAge: longCache }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
