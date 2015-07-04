@@ -71,7 +71,7 @@ header, main, footer {display:table-row;background:transparent;}
   }
 
   footer {
-    margin-top:1rem;
+    margin-top:0rem;
   }
 }
 
@@ -114,6 +114,38 @@ body {
 
 #container {
   border-top:solid 0.5rem @col-primary;
+
+  a {
+    color:@col-text;
+    //text-decoration: underline;
+    border-bottom:solid @col-primary 1px;
+    font-weight:bold;
+    &:hover {
+      color:@col-secondary;
+    }
+  }
+
+  .btn-primary {
+    display:inline-block;
+    margin-bottom:1rem;
+    background:@col-text;
+    color:@col-bg; font-weight:normal;
+    font-size:smaller;
+    padding:0.5rem 1rem;
+  }
+
+  .icon-btn {
+    display:inline-block;
+    padding-top:0.75rem;
+    span {display:block;}
+    span.btn-label {font-size:small;}
+    background:none;
+    color:@col-text;
+    height:5.5rem;
+    width:5.5rem;
+    border:solid 0.25rem @col-primary;
+    border-radius:50%;
+  }
 }
 
 header, main, footer {
@@ -125,7 +157,7 @@ header, main, footer {
 main {
   #about, #cv {padding:1rem 2rem;}
   #about, #cv-trigger {max-width:30rem;margin:0 auto;}
-  #cv-trigger {margin-top:1rem;margin-bottom:3.5rem;}
+  #cv-trigger {margin-top:0.5rem;margin-bottom:3.5rem;}
   #cv {
     h1 {display:none;}
     #fake-cv-header h1 {display:block;}
@@ -152,42 +184,14 @@ footer {
       padding:0 0.75rem;
     }
 
+    a {
+      border-bottom:none;
+    }
+
     .social-label {
       display:none;
     }
   }
-}
-
-a {
-  color:@col-text;
-  //text-decoration: underline;
-  border-bottom:solid @col-primary 1px;
-  font-weight:bold;
-  &:hover {
-    color:@col-secondary;
-  }
-}
-
-.btn-primary {
-  display:inline-block;
-  margin-bottom:1rem;
-  background:@col-text;
-  color:@col-bg; font-weight:normal;
-  font-size:smaller;
-  padding:0.5rem 1rem;
-}
-
-.icon-btn {
-  display:inline-block;
-  padding-top:0.75rem;
-  span {display:block;}
-  span.btn-label {font-size:small;}
-  background:none;
-  color:@col-text;
-  height:5.5rem;
-  width:5.5rem;
-  border:solid 0.25rem @col-primary;
-  border-radius:50%;
 }
 
 #print {
@@ -223,9 +227,9 @@ a {
 @media all and (min-width: 20em) {
   html {font-size:@font-size-medium;}
   .flexbox {
-    #container {padding:6.5rem 0 0 0;}
+    #container {padding:5rem 0 0 0;}
     header, footer {width:90%;}
-    footer {margin-top:1.5rem;}
+    footer {margin-top:0rem;}
   }
 
   a {

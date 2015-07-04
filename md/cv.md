@@ -3,7 +3,10 @@ CV - Ezekiel Angbashim Kigbo Jr
 <div id="cv-header-links">
 <mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
 </div>
-<div id="cv-print-only">**Email: theatlasroom@gmail.com**</div>
+<div id="cv-print-only">
+**Email: theatlasroom@gmail.com**
+**Phone: 0424 634 699**
+</div>
 
 I am a full stack developer with a keen interest in crafting meaningful web based applications.
 

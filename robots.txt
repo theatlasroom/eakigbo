@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /views/
+Disallow: /src/
+Disallow: /routes/
+Disallow: /bower_components/
+Disallow: /gulp/
+Disallow: /ignored/
+Disallow: /bin/
+Disallow: /md/

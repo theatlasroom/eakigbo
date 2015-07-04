@@ -31,6 +31,7 @@ app.use('/users', users);
 // Serve bower files
 // set the cache for static files
 app.use(compression());
+app.use(compression());
 var longCache = 86400000 * 30; // cache for 30 days (in ms)
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
 app.use('/bower_components',  express.static(__dirname + '/bower_components', { maxAge: longCache }));
