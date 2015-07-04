@@ -1,0 +1,263 @@
+@title-font:"bebas-neue";
+@body-font:"museo-sans";
+
+@col-primary:#F56723;
+//@col-primary:#708218;
+@col-secondary:#FFF;
+@col-tertiary:;
+@col-bg:#232323;
+@col-heading:#F2F2F2;
+@col-text:#D6D6D6;
+
+@font-size-large: 15pt;
+@font-size-medium: 12pt;
+@font-size-small: 9.5pt;
+
+//@bgimage:'/dist/images/me-crop';
+@bgimage:'/dist/images/me-mt-dandenong-bw';
+
+/*
+* Needs cleanup
+* - remove old styles
+* - reorder
+*/
+
+.centered {text-align:center;}
+
+// General styles
+html {
+  font-size:@font-size-small;
+}
+
+// fix the containers if we dont have legacy flexbox support - fix for IE
+html.no-flexboxlegacy {
+  #container, body {display:block;}
+}
+
+html.js {
+  header, main, footer {display:none;}
+}
+
+// non flexbox fall back
+body {display:table;width:100%;}
+#container {display:table;width:100%;}
+header, main, footer {display:table-row;background:transparent;}
+
+// use flexbox for the layout
+// flexbox override
+.flexbox {
+  #container {
+    //display:flex;
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding:2.75rem 0 0 0;
+  }
+
+  header, footer {
+    width:85%;
+  }
+
+  header, main, footer {
+    position:relative;
+    margin:0 auto;
+  }
+
+  footer {
+    margin-top:1rem;
+  }
+}
+
+body {
+  //.container-margins(3rem);
+  h1 {font-size:3.5rem; }
+  h2 {font-size:1.75rem; }
+  h3 {font-size:1.5rem; }
+  h4 {font-size:1.25rem; }
+  p, ul, ol, blockquote {font-size:1rem;}
+
+  h1 {font-family:@title-font;font-weight:bold;color:@col-heading;text-transform:uppercase;}
+  h1, h2, h3, h4, h5, h6 {line-height:3rem;}
+  ul, ol, p, li, blockquote {line-height:2rem;}
+  h2, h3, h4, h5, h6, ul, ol, p, blockquote {font-family:@body-font;color:@col-text;font-weight:light;}
+  ul {list-style-type: square;}
+  height:100%;
+  background-color:#000;
+}
+
+#container::after {
+  content: "";
+  /* full size bg image */
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment:scroll;
+  background-size:cover;
+  background-clip: border-box;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+
+#container {
+  border-top:solid 0.5rem @col-primary;
+}
+
+header, main, footer {
+  .centered;
+  background:transparent;
+}
+
+// main body styles
+main {
+  #about, #cv {padding:1rem 2rem;}
+  #about, #cv-trigger {max-width:30rem;margin:0 auto;}
+  #cv-trigger {margin-top:1rem;margin-bottom:3.5rem;}
+  #cv {
+    h1 {display:none;}
+    #fake-cv-header h1 {display:block;}
+    h1, h2, h3, h4, h5, h6, ul, ol, p, blockquote {color:@col-bg;}
+    blockquote {border-left:solid @col-primary 0.25rem;font-style: italic;}
+    #cv-print-only {display:none;}
+    a {color:@col-bg;}
+    display:none;
+    text-align:left;
+    background:#efefef;
+  }
+}
+
+// footer styles
+footer {
+  font-weight:100;
+  margin-top:0rem;
+  a {border:none;}
+  #social {
+    font-size:x-small;
+    li {
+      display:inline-block;
+      list-style-type:none;
+      padding:0 0.75rem;
+    }
+
+    .social-label {
+      display:none;
+    }
+  }
+}
+
+a {
+  color:@col-text;
+  //text-decoration: underline;
+  border-bottom:solid @col-primary 1px;
+  font-weight:bold;
+  &:hover {
+    color:@col-secondary;
+  }
+}
+
+.btn-primary {
+  display:inline-block;
+  margin-bottom:1rem;
+  background:@col-text;
+  color:@col-bg; font-weight:normal;
+  font-size:smaller;
+  padding:0.5rem 1rem;
+}
+
+.icon-btn {
+  display:inline-block;
+  padding-top:0.75rem;
+  span {display:block;}
+  span.btn-label {font-size:small;}
+  background:none;
+  color:@col-text;
+  height:5.5rem;
+  width:5.5rem;
+  border:solid 0.25rem @col-primary;
+  border-radius:50%;
+}
+
+#print {
+  text-align:right;
+}
+
+// Responsive images
+@media all and (min-width: 0px){
+  #container::after {
+    background-image: url("@{bgimage}-480.png");
+  }
+}
+
+@media all and (min-width: 480px){
+  #container::after {
+    background-image: url("@{bgimage}-768.png");
+  }
+}
+
+@media all and (min-width: 768px){
+  #container::after {
+    background-image: url("@{bgimage}-1440.png");
+  }
+}
+
+@media all and (min-width: 1440px){
+  #container::after {
+    background-image: url("@{bgimage}.png");
+  }
+}
+// general media queries
+
+@media all and (min-width: 20em) {
+  html {font-size:@font-size-medium;}
+  .flexbox {
+    #container {padding:6.5rem 0 0 0;}
+    header, footer {width:90%;}
+    footer {margin-top:1.5rem;}
+  }
+
+  a {
+    border-bottom:solid @col-primary 0.05rem;
+  }
+}
+
+@media all and (min-width: 40em){
+  html {font-size:@font-size-large;}
+}
+
+@media print {
+  html {font-size:9pt;}
+  html body {
+    #container {
+      header, #about, #cv-trigger, #fake-cv-header, #cv-header-links, footer, #social {display:none;}
+      opacity:1;
+      border-top:0;
+      margin:0 0.5em;
+      padding:0.5em 0 0 0;
+      * {line-height:1.5em;}
+    }
+    #container::after {background:none;}
+    main #cv{
+      padding:0;
+      &, #cv-print-only {display:block;}
+    }
+    blockquote {font-size:smaller;border-top:none;border-right:none;border-bottom:none;}
+    a {border-bottom:none;}
+  }
+}
+
+html.no-flexboxlegacy {
+  body,#container {display:block;} // fix ie flex issues?
+}

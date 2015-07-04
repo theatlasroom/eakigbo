@@ -8,6 +8,7 @@
     "foundation": "~5.5.2",
     "fontawesome": "~4.3.0",
     "velocity": "~1.2.2",
-    "imagesloaded": "~3.1.8"
+    "imagesloaded": "~3.1.8",
+    "vegas": "~2.1.3"
   }
 }
