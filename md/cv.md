@@ -21,17 +21,18 @@ I've had the opportunity to work across some interesting areas with a diverse gr
 * API development
 * Web applications programming
 * Time management / Organisation skills
+* Stakeholder engagement
 * Programming, programming, programming and programming
 
 I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=q-Ez4c1QfQ0) on the soccer field.
 
 ## Key skills
-* Javascript - jQuery, AngularJS, BackboneJS + marionette, nodejs (minimally)
-* PHP - API development, Laravel, Codeigniter
+* Javascript - AngularJS, BackboneJS, React, jQuery, NodeJS
 * Responsive Web Design / HTML5 / CSS3 - Bootstrap, Foundation, SASS, LESS
-* MySQL / Postgresql / MongoDB (minimally)
+* PHP - API development, Laravel, Codeigniter
+* MySQL / Postgresql / MongoDB
 * Web application development - RESTful API development, frontend development
-* Tools - GIT (github, bitbucket), Bower, Gulpjs, grunt, composer, bash
+* Tools - GIT (github, bitbucket), Webpack, Bower, Gulpjs, grunt, composer, bash
 * Testing - PHPUnit, Codeception, Protractor, Karma, Jasmine
 * Creative coding - Processing framework (Java) / openFrameworks (C++) / Supercollider
 
@@ -43,14 +44,36 @@ The University of Newcastle, NSW
 ## Work history
 
 ### Freelancing (2010 - Present)
-* [SquareAway](http://squareaway.com) - Full stack development
+* [YouLi](http://youli.travel) - Full stack development (NodeJS + Angular)
+* [SquareAway](http://squareaway.com) - Full stack development (Laravel + Angular)
 * [HaleyK](http://www.haleyk.com/) - Design & Development
 * [LogoLogix](http://logologix.com.au/) - Development
 * [Seascape Design & Drafting](http://www.seascapedrafting.com/) - Development
 * [MervDesign](http://mervdesign.com/) - Development
 * [Negative Films](http://www.negativefilms.net/) - Development
 
-### Coordinator - Online development (2011 – Present)
+### Fellow - Neighbourhood Justice Centre (2015 – 2016)
+
+Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
+
+#### Major projects
+* [User Research](https://njc.codeforaustralia.org/reports/research)
+* [Online guilty pleas prototype](https://github.com/CodeforAustralia/online-pleas)
+* [Case management / triaging prototype](https://github.com/CodeforAustralia/case-triage)
+* [Intranet prototype](https://github.com/CodeforAustralia/njc-intranet)
+
+#### Key responsibilities
+* User research and ideation
+* Rapid prototyping proposed solutions
+* UX / UI development
+* DevOps
+* Organising and facilitating sessions for user feedback
+* Project management for multiple concurrent projects
+* Being available to provide technical advice on day to day problems and upcoming projects
+* Stakeholder engagement
+* Talks and presentations to promote the work of the NJC and Code for Australia
+
+### Coordinator - Online development (2011 – 2015)
 
 La Trobe University
 
