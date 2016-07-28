@@ -66,7 +66,7 @@ Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
 * User research and ideation
 * Rapid prototyping proposed solutions
 * UX / UI development
-* DevOps
+* DevOps - Deployment, server management
 * Organising and facilitating sessions for user feedback
 * Project management for multiple concurrent projects
 * Being available to provide technical advice on day to day problems and upcoming projects
