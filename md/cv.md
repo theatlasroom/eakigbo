@@ -24,7 +24,7 @@ I've had the opportunity to work across some interesting areas with a diverse gr
 * Stakeholder engagement
 * Programming, programming, programming and programming
 
-I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=q-Ez4c1QfQ0) on the soccer field.
+I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=86MpZTqoWZk) on the soccer field.
 
 ## Key skills
 * Javascript - AngularJS, BackboneJS, React, jQuery, NodeJS
