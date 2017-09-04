@@ -8,7 +8,7 @@ CV - Ezekiel Angbashim Kigbo Jr
 **Phone: 0424 634 699**
 </div>
 
-I am a full stack developer with a keen interest in crafting meaningful web based applications.
+I am a polyglot software developer with a keen interest in crafting meaningful web based applications.
 
 Pushing the envelope, getting dirty with code, understanding clients, providing solutions that are user focused and championing cutting edge design are my passions.
 
