@@ -14,27 +14,27 @@ Pushing the envelope, getting dirty with code, understanding clients, providing 
 
 I've had the opportunity to work across some interesting areas with a diverse group of people, allowing me to grow my skills in areas such as:
 
+* Agile development
 * Verbal and written communication
 * Teamwork
+* Mentoring
 * User centered design and UX
+* Stakeholder engagement
 * Responsive design
 * API development
-* Web applications programming
-* Time management / Organisation skills
-* Stakeholder engagement
 * Programming, programming, programming and programming
 
 I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=86MpZTqoWZk) on the soccer field.
 
 ## Key skills
-* Javascript - AngularJS, BackboneJS, React, jQuery, NodeJS
-* Responsive Web Design / HTML5 / CSS3 - Bootstrap, Foundation, SASS, LESS
-* PHP - API development, Laravel, Codeigniter
-* MySQL / Postgresql / MongoDB
-* Web application development - RESTful API development, frontend development
-* Tools - GIT (github, bitbucket), Webpack, Bower, Gulpjs, grunt, composer, bash
-* Testing - PHPUnit, Codeception, Protractor, Karma, Jasmine
-* Creative coding - Processing framework (Java) / openFrameworks (C++) / Supercollider
+* Frontend - React / Redux, AngularJS (1.x.x), BackboneJS, CSS, HTML5
+* RESTful APIs - ExpressJS / HapiJS, Django, Laravel
+* Languages - Javascript, Python, Golang, Rust, PHP
+* Databases - Mysql, Postgres, MongoDB, SQLlite
+* Tools - Git, Webpack, Gulpjs, Composer, shell scripting
+* Deployment - Docker, Ansible
+* Testing - Jest, Jasmine, Mocha, Chai, PHPUnit, Codeception, Protractor
+* Creative coding - Webaudio, WebGL, Processing framework (Java) / openFrameworks (C++) / Supercollider
 
 ## Education
 
@@ -43,7 +43,18 @@ The University of Newcastle, NSW
 
 ## Work history
 
-### Freelancing (2010 - Present)
+### Common Code (2016 - Present)
+Working in fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
+
+#### Key responsibilities
+* Full stack development (React + Django / NodeJS)
+* Working on a mixture of green field projects and existing codebases
+* Regular sprint planning, standups, estimation and reviews
+* Working closely with designers and product owners to refine user stories
+* Mentoring and supporting new developers and team members
+* Contributing to new knowledge through internal presentations
+
+### Freelance / Contracting (2010 - Present)
 * [YouLi](http://youli.travel) - Full stack development (NodeJS + Angular)
 * [SquareAway](http://squareaway.com) - Full stack development (Laravel + Angular)
 * [HaleyK](http://www.haleyk.com/) - Design & Development
