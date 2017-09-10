@@ -2,7 +2,12 @@
 * Main js file
 */
 
-(function(){
+require('npm/jquery')
+require('npm/foundation-sites');
+require('npm/velocity-animate');
+require('npm/fontawesome');
+
+(function($){
   'use strict';
 
   var cv_open_flag = false;
@@ -47,7 +52,6 @@
   });
 
   function route(){
-    console.log();
     var _route = window.location.pathname.toLowerCase();
     if (_route === '/cv'){
       cvPage();
@@ -88,20 +92,22 @@
       ui.$header.velocity({
         top: "-3rem",
       });
-      if (Modernizr.touch){ growRocket(); }
+      growRocket();
     }
     else {
       //page('/');
       ui.$cv.velocity("transition.slideDownOut", { display: "none" }, "easeInSine");
       ui.$about.fadeToggle();
       ui.$header.velocity({top: "0",});
-      if (Modernizr.touch){ shrinkRocket(); }
+      shrinkRocket();
     }
   }
 
   function homePage(){
     var elems = [ui.$header, ui.$main, ui.$footer];
     // init function - runs on app start
+    console.log(elems);
+    console.log(ui.$header);
     ui.$header.velocity("transition.slideDownIn", {delay: 500, queue: 'init'});
     ui.$main.velocity("transition.slideLeftIn", {delay: 1000, queue: 'init'});
     ui.$footer.velocity("transition.slideUpIn", {delay: 1500, queue: 'init'});
@@ -141,4 +147,4 @@
         rotateZ: "0deg"
       });
   }
-})();
+})(jQuery);

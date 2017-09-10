@@ -3,21 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production webpack  --optimize-minimize --progress --profile --colors",
+    "build": "NODE_ENV=production webpack --progress --profile --colors -p",
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "devServer": "webpack-dev-server --progress --colors --inline"
   },
   "dependencies": {
     "body-parser": "~1.12.4",
     "compression": "^1.5.0",
+    "connect-history-api-fallback": "^1.3.0",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.12.4",
+    "fontawesome": "^4.7.2",
+    "foundation-sites": "^6.4.4-rc1",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
     "less-middleware": "^2.2.1",
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
@@ -25,24 +32,23 @@
     "css-loader": "^0.28.7",
     "del": "~1.2.0",
     "es": "^0.4.4",
-    "fontawesome": "^4.7.2",
-    "foundation": "^4.2.1-1",
     "fs": "0.0.2",
     "imagemin-pngquant": "^4.1.0",
     "imagesloaded": "^4.1.3",
     "jade": "~1.9.2",
+    "less-loader": "^4.0.5",
     "lodash": "~3.9.3",
     "marked": "^0.3.3",
-    "modernizr": "^3.5.0",
     "nodemon": "^1.12.0",
     "postcss-loader": "^2.0.6",
     "run-sequence": "^1.1.1",
     "style-loader": "^0.18.2",
     "tiny-lr": "^0.1.6",
-    "velocity": "^0.7.2",
+    "velocity-animate": "^1.5.0",
+    "webpack": "^3.5.6",
     "webpack-chunk-hash": "^0.4.0",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.19.1",
-    "webpack": "^3.5.6"
+    "webpack-dev-server": "^2.7.1",
+    "webpack-hot-middleware": "^2.19.1"
   }
 }
