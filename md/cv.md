@@ -8,7 +8,7 @@ CV - Ezekiel Angbashim Kigbo Jr
 **Phone: 0424 634 699**
 </div>
 
-I am a polyglot software developer with a keen interest in crafting meaningful web based applications.
+I am a software developer with a keen interest in crafting meaningful web based applications.
 
 Pushing the envelope, getting dirty with code, understanding clients, providing solutions that are user focused and championing cutting edge design are my passions.
 
@@ -44,7 +44,7 @@ The University of Newcastle, NSW
 ## Work history
 
 ### Common Code (2016 - Present)
-Working in fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
+Working in a fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
 
 #### Key responsibilities
 * Full stack development (React + Django / NodeJS)

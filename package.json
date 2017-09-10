@@ -3,16 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.12.4",
-    "compression": "^1.5.0",    
+    "compression": "^1.5.0",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.12.4",
     "jade": "~1.9.2",
-    "less-middleware": "1.0.x",
+    "less-middleware": "^2.2.1",
     "marked": "^0.3.3",
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1"
@@ -51,6 +52,7 @@
     "jshint-stylish": "~2.0.0",
     "lodash": "~3.9.3",
     "main-bower-files": "^2.8.2",
+    "nodemon": "^1.12.0",
     "path": "^0.11.14",
     "run-sequence": "^1.1.1",
     "stream-series": "^0.1.1",
