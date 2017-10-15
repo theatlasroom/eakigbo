@@ -1,42 +1,36 @@
-
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{{title}}}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Full Stack Developer based in Melbourne"/>
-        <meta name="keywords" content="Full Stack, Developer, Melbourne, js, php, frontend, css, web"/>
-        <meta name="google-site-verification" content="x8JcxAj255mpX9w4lVJSrMwwAiEwWaWNiS-GLcwkPzk"/>
-        <meta property="og:title" content="Ezekiel Kigbo"/>
-        <meta property="og:image" content="/dist/images/me-mt-dandenong-768.png"/>
-        <meta property="og:description" content="Melbourne based Full Stack Developer"/>
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="{{{styles}}}">
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>{{{title}}}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Full Stack Developer based in Melbourne"/>
+      <meta name="keywords" content="Full Stack, Developer, Melbourne, js, php, frontend, css, web"/>
+      <meta name="google-site-verification" content="x8JcxAj255mpX9w4lVJSrMwwAiEwWaWNiS-GLcwkPzk"/>
+      <meta property="og:title" content="Ezekiel Kigbo"/>
+      <meta property="og:image" content="/dist/images/me-mt-dandenong-768.png"/>
+      <meta property="og:description" content="Melbourne based Full Stack Developer"/>
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="stylesheet" href="{{{styles}}}">
     </head>
     <body>
-
-        <!-- Add your site or application content here -->
-        <div id="container">
-          <header>
-            <h1>Ezekiel Kigbo</h1>
+        <main>
+          <header class="content-section">
+            <section class="content">
+              <div class="avatar">
+                <div class="avatar-content">
+                  <img src="/static/images/me-mt-dandenong.png" height="100%" width="auto" />
+                </div>
+              </div>
+              <div class="headline">
+                <h1>{{{headline}}}<br/>-</h1>
+              </div>
+            </section>
           </header>
           {{{body}}}
-          <footer>
-            <p>Photography by <a href='http://haleyk.com'>haleyk</a></p>
-            <ul id="social">
-              <li><a href="mailto:theatlasroom@gmail.com"><span class="social-label">Contact me</span> <span class="fa fa-2x fa-envelope"></span></a></li>
-              <li><a href="http://twitter.com/theatlasroom"><span class="social-label">Twitter</span> <span class="fa fa-2x fa-twitter"></span></a></li>
-              <li><a href="http://instagram.com/theatlasroom"><span class="social-label">Instagram</span> <span class="fa fa-2x fa-instagram"></span></a></li>
-              <li><a href="https://au.linkedin.com/in/theatlasroom"><span class="social-label">LinkedIn</span> <span class="fa fa-2x fa-linkedin"></span></a></li>
-              <li><a href="http://github.com/theatlasroom"><span class="social-label">GitHub</span> <span class="fa fa-2x fa-github"></span></a></li>
-              <li><a href="http://soundcloud.com/theatlasroom"><span class="social-label">SoundCloud</span> <span class="fa fa-2x fa-soundcloud"></span></a></li>
-            </ul>
-          </footer>
-        </div>
+        </main>
 
-        <script src="{{{bundle}}}"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
@@ -62,5 +56,6 @@
               ]
           }
         </script>
+        <script src="{{{bundle}}}"></script>
     </body>
 </html>

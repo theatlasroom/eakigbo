@@ -1,0 +1,103 @@
+/*@import url('https://.fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html {
+  /*font-family: 'Source Code Pro', monospace;*/
+  font-family: 'Roboto Mono', monospace;
+  font-size:15px;
+  font-weight:500;
+  line-height: 2.5rem;
+}
+
+main {
+  text-align: left;
+}
+
+html button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button-bevel;
+}
+
+a {
+  color:#D14841;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+.button {
+  text-shadow: none;
+  padding:1rem;
+  background:#D14841;
+  color:#efefef;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background:transparent;
+  color:#333;
+  border-bottom: dotted 1px;
+  padding-left:0;
+  padding-right:0;
+}
+
+h1, h2, h3, h4 {
+  margin:0;
+  padding:0;
+  font-size:1rem;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+h1:not(#cv-ezekiel-kigbo) {
+  font-size:2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1#cv-ezekiel-kigbo {
+  display:none;
+}
+
+h2 {
+  background:#D14841;
+  color:#efefef;
+  font-size:1.25rem;
+  /*font-weight: 700;*/
+  padding:calc(1.25rem/2);
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size:1.5rem;
+  font-weight: 600;
+  text-decoration:underline;
+  margin: 2rem 0;
+}
+
+h4 {
+  margin: 2rem 0;
+}
+
+ul, ol, blockquote, h4, p {
+  font-size: 1.25rem;
+  font-weight:400;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin-left:2rem;
+}
+
+ul, ol {
+  margin:1rem 1.25rem;
+  padding:0;
+}
+
+li {
+  margin:0.5rem 0;
+  list-style-type: square;
+}

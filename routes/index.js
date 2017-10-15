@@ -7,7 +7,7 @@ const marked = require('marked')
 
 const defaultDocs = [{name: 'about', file: 'about.md'}, {name: 'cv', file: 'cv.md'}]
 
-function prepareDocuments(docs){
+function parseDocuments(docs){
   let html = {};
   docs.forEach(({ name, file }) => {
     const string = marked(fs.readFileSync(path.join(__dirname, '../md', file), 'utf8'))
@@ -16,31 +16,35 @@ function prepareDocuments(docs){
   return html;
 }
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  const data = prepareDocuments(defaultDocs);
+function renderOptions(){
+  const data = parseDocuments(defaultDocs);
   const isDev = app.get('env') !== 'production'
   const bundle = isDev
     ? 'http://localhost:8080/dist/bundle.js' // assume webpack-dev-server if we are not in prod
     : '/dist/bundle.js'
-  const styles = isDev
+    const styles = isDev
     ? 'http://localhost:8080/dist/styles.css'
     : '/dist/styles.css'
-  res.render('index', {
+  return {
+    headline: 'Ezekiel Kigbo',
     title: 'Ezekiel Kigbo | Full Stack Developer - Melbourne',
     description: 'Full Stack Developer based in Melbourne',
     environment: app.get('env'),
     data,
     bundle,
-    styles    
-  })
+    styles
+  }
+}
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  const renderOpts = renderOptions();
+  res.render('index', renderOpts)
 });
 
 router.get('/cv', function(req, res, next) {
-  res.render('index', {
-    title: 'Ezekiel Kigbo | Full Stack Developer - Melbourne',
-    environment: app.get('env')
-  });
+  const renderOpts = renderOptions();
+  res.render('cv', Object.assign({}, renderOpts, { headline: 'Ezekiel Kigbo / CV' }));
 });
 
 module.exports = router;

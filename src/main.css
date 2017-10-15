@@ -1,7 +1,4 @@
-@import './normalize.css';
-
-body {
-  font-family: 'helvetica';
-  background: #333333;
-  color: #ffffff;
-}
+@import './normalize';
+@import './typography';
+@import './layout';
+@import './responsive';

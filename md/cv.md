@@ -1,7 +1,6 @@
 # CV - Ezekiel Kigbo
 
 <mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
-**Email: theatlasroom@gmail.com**
 
 I am a software developer with a keen interest in crafting meaningful web based applications.
 
@@ -35,20 +34,20 @@ I am constantly looking to grow, professionally and personally, so when i'm not 
 ## Education
 
 Bachelor of Computer Science (2006 – 2010)
-The University of Newcastle, NSW
+<br/>The University of Newcastle, NSW
 
 ## Work history
 
-### Common Code (2016 - Present)
+### Common Code | Software Developer (2016 - Present)
 
 Working in a fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
 
 #### Key responsibilities
 
 * Full stack development
-  ** Frontend JS: React + Redux
-  ** Python: Django, Flask
-  ** NodeJS: ExpressJS, HapiJS, MeteorJS
+  - Frontend JS: React + Redux
+  - Python: Django, Flask
+  - NodeJS: ExpressJS, HapiJS, MeteorJS
 * Working on a mixture of green field projects and existing codebases
 * Regular sprint planning, standups, estimation and reviews
 * Working closely with designers and product owners to refine user stories
@@ -65,7 +64,7 @@ Working in a fast-paced, highly agile agency environment across a range of proje
 * [MervDesign](http://mervdesign.com/) - Development
 * [Negative Films](http://www.negativefilms.net/) - Development
 
-### Code for Australia, Fellow - Neighbourhood Justice Centre (2015 – 2016)
+### Code for Australia | Fellow - Neighbourhood Justice Centre (2015 – 2016)
 
 Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
 
@@ -88,11 +87,9 @@ Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
 * Stakeholder engagement
 * Talks and presentations to promote the work of the NJC and Code for Australia
 
-### Coordinator - Online development (2011 – 2015)
+### La Trobe University | Coordinator - Online development (2011 – 2015)
 
-La Trobe University
-
-#### Major projects - La Trobe University
+#### Major projects
 
 * Library system implementation (2014-2015) - Assisted with UX and implementation, integrating systems and content, providing solutions to technical challenges
 * Training system for students, staff and internal staff (Continually reviewed) - UX, Testing, UI and development
@@ -101,7 +98,7 @@ La Trobe University
 * Skills Essentials (2013) - Developing reusable, responsive, mobile-first activities for e-learning
 * Educational resources development (Continually reviewed) - Multimedia production, adobe flash and captivate development
 
-#### Key responsibilities - La Trobe University
+#### Key responsibilities
 
 * Contributing to maintaining the quality of Library web services according to the University and Library standards
 * Working collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
@@ -111,26 +108,21 @@ La Trobe University
 * Managing multiple projects
 * Participation in various committees and working groups
 
-### Web Productions Officer (2009 – 2011)
-
-Centre for Teaching &amp; Learning, University of Newcastle
+### University of Newcastle | Web Productions Officer (2009 – 2011)
+**Centre for Teaching &amp; Learning**
 
 * Managing and coordinating the production of web-based promotional and informative materials associated with the Centre’s core operations, for both staff and students, in collaboration with the University’s Corporate Information Division.
 * Ongoing maintenance of all web-based resources for the centre
 * Manage communication and information dissemination projects by designing and developing web-based materials associated with the Centre’s core operations.
 * Coordinate the web-based projects to promote and inform the University and broader community about all teaching and learning events and achievements.
 
-### Library Information Common Rover (2007 – 2009)
-
-University of Newcastle
+### University of Newcastle | Library Information Common Rover (2007 – 2009)
 
 * Providing front line IT and general customer service to staff and students
 * Taking responsibility for the cleanliness and maintenance of the computing facilities at all times (24hr access)
 * Taking responsibility for the completion of set tasks allocated by other staff members (usually in the form of creating digital archives of materials or testing systems and procedures)
 
-### Checkout operator (2005 – 2007)
-
-Woolworths
+### Woolworths | Checkout operator (2005 – 2007)
 
 * Front line customer service
 

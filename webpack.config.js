@@ -26,7 +26,7 @@ const shared = {
     {
       test: /\.css$/,
       use: ExtractTextPlugin.extract({
-        use: [ 'css-loader?modules', 'postcss-loader' ]
+        use: [ 'css-loader', 'postcss-loader' ]
       })
     },
   ]
