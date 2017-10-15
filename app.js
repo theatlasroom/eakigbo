@@ -10,9 +10,6 @@ const routes = require('./routes/index');
 
 const app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 // Pretty output html
 app.locals.pretty = true;
 
@@ -22,16 +19,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('less-middleware')(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('*', routes);
 
 // set the cache for static files
 app.use(compression());
-app.use(compression());
 const longCache = 86400000 * 30; // cache for 30 days (in ms)
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
-app.use('/bower_components',  express.static(__dirname + '/bower_components', { maxAge: longCache }));
+app.use('/static', express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -44,25 +38,27 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
+// if (app.get('env') === 'development') {
+//   app.use(function(err, req, res, next) {
+//     res.status(err.status || 500);
+//     res.render('error', {
+//       message: err.message,
+//       error: err
+//     });
+//   });
+// }
+//
+// // production error handler
+// // no stacktraces leaked to user
+// app.use(function(err, req, res, next) {
+//   res.status(err.status || 500);
+//   res.render('error', {
+//     message: err.message,
+//     error: {}
+//   });
+// });
 
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
 
-
-module.exports = app;
+app.listen(3000, () => {
+  console.log(`Server running on port 3000`)
+})

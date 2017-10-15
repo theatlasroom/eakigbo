@@ -5,3 +5,5 @@ node_modules
 bower_components
 test/bower_components
 ignored
+yarn-error.log
+*.log

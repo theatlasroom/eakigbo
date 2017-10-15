@@ -8,6 +8,18 @@ const env = process.env.NODE_ENV || 'development';
 console.log("configured for", env);
 
 // TODO: cleanup dist dir before a new bundle is written
+const shared = {
+  rules: [
+    { test: /\.md$/, use: [ 'markdown-loader' ]},
+    {
+      test: /\.(js|jsx)$/, // test to match files
+      use: 'babel-loader', // plugin to tranform the files that match
+      exclude: /node_modules/
+    },
+    { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
+    { test: /\.less$/, use: [ 'style-loader', 'css-loader', 'less-loader' ]},
+  ]
+}
 
 const dev = {
   entry: {
@@ -27,15 +39,7 @@ const dev = {
     contentBase: 'public'
   },
 
-  rules: [
-    {
-      test: /\.(js)$/, // test to match files
-      use: 'babel-loader', // plugin to tranform the files that match
-      exclude: /node_modules/
-    },
-    { test: /\.css/, use: [ 'style-loader', 'css-loader' ]},
-    { test: /\.less/, use: [ 'style-loader', 'css-loader', 'less-loader' ]}
-  ],
+  rules: shared.rules,
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -44,14 +48,6 @@ const dev = {
     new webpack.NamedModulesPlugin(),
     // prints more readable module names in the browser console on HMR updates
     new webpack.NoEmitOnErrorsPlugin(),
-
-    // add jquery globals
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      "window.jQuery": "jquery"
-      // foundation: 'Foundation'
-    })
   ]
 }
 
@@ -68,23 +64,8 @@ const prod = {
     path: path.resolve(__dirname, './public/dist/'),
     publicPath: '/dist/'
   },
-  rules: [
-    {
-      test: /\.(js)$/, // test to match files
-      use: 'babel-loader',
-      // exclude: /node_modules/
-    },
-    { test: /\.css/, use: [ 'style-loader', 'css-loader' ]},
-    { test: /\.less/, use: [ 'style-loader', 'css-loader', 'less-loader' ]}
-  ],
+  rules: shared.rules,
   plugins: [
-    // add jquery globals
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      "window.jQuery": "jquery"
-      // foundation: 'Foundation'
-    }),
 
     new webpack.DefinePlugin({
       'process.env': {
