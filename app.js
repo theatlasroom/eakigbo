@@ -1,21 +1,23 @@
-var express = require('express');
-var compression = require('compression')
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+require('dotenv').config();
+const express = require('express');
+const exphbs  = require('express-handlebars');
+const compression = require('compression')
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+const routes = require('./routes/index');
 
-var app = express();
+const app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 // Pretty output html
 app.locals.pretty = true;
+
+// set the view engine
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 // uncomment after placing your favicon in /public
 app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -23,28 +25,22 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('less-middleware')(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 
-// Serve bower files
 // set the cache for static files
 app.use(compression());
-app.use(compression());
-var longCache = 86400000 * 30; // cache for 30 days (in ms)
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
-app.use('/bower_components',  express.static(__dirname + '/bower_components', { maxAge: longCache }));
+const longCache = 86400000 * 30; // cache for 30 days (in ms)
+app.use('/static', express.static(path.join(__dirname, 'public'), { maxAge: longCache }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // error handlers
-
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
@@ -68,4 +64,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+app.listen(3000, () => {
+  console.log(`Server running on port 3000`)
+  console.log('process.env', process.env);
+})

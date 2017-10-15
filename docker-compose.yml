@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web:
+    container_name: eakigbo_website
+    env_file: .env
+    build: .
+    command: npm run deploy
+    ports:
+      - ${EXPOSED_PORT}
+    environment:
+      PORT: ${PORT}
+      VIRTUAL_PORT: ${PORT}
+      VIRTUAL_HOST: eakigbo.me, www.eakigbo.me
+      LETSENCRYPT_HOST: eakigbo.me, www.eakigbo.me
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      LETSENCRYPT_TEST: ${LETSENCRYPT_TEST}
+    volumes:
+      - .:/usr/app
+
+networks:
+  default:
+    external:
+      name: ${DOCKER_NETWORK}

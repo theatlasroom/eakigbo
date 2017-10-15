@@ -1,14 +1,8 @@
-CV - Ezekiel Angbashim Kigbo Jr
-============================================================================================================================================
-<div id="cv-header-links">
-<mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
-</div>
-<div id="cv-print-only">
-**Email: theatlasroom@gmail.com**
-**Phone: 0424 634 699**
-</div>
+# CV - Ezekiel Kigbo
 
-I am a polyglot software developer with a keen interest in crafting meaningful web based applications.
+<mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
+
+I am a software developer with a keen interest in crafting meaningful web based applications.
 
 Pushing the envelope, getting dirty with code, understanding clients, providing solutions that are user focused and championing cutting edge design are my passions.
 
@@ -27,6 +21,7 @@ I've had the opportunity to work across some interesting areas with a diverse gr
 I am constantly looking to grow, professionally and personally, so when i'm not crunching 1's and 0's you can find me exploring the world, capturing sounds as [The Atlas Room](http://soundcloud.com/theatlasroom), documenting my adventures [through the viewfinder](https://instagram.com/theatlasroom) or doing my best to copy [Andres Iniesta](https://www.youtube.com/watch?v=86MpZTqoWZk) on the soccer field.
 
 ## Key skills
+
 * Frontend - React / Redux, AngularJS (1.x.x), BackboneJS, CSS, HTML5
 * RESTful APIs - ExpressJS / HapiJS, Django, Laravel
 * Languages - Javascript, Python, Golang, Rust, PHP
@@ -39,15 +34,20 @@ I am constantly looking to grow, professionally and personally, so when i'm not 
 ## Education
 
 Bachelor of Computer Science (2006 – 2010)
-The University of Newcastle, NSW
+<br/>The University of Newcastle, NSW
 
 ## Work history
 
-### Common Code (2016 - Present)
-Working in fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
+### Common Code | Software Developer (2016 - Present)
+
+Working in a fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
 
 #### Key responsibilities
-* Full stack development (React + Django / NodeJS)
+
+* Full stack development
+  - Frontend JS: React + Redux
+  - Python: Django, Flask
+  - NodeJS: ExpressJS, HapiJS, MeteorJS
 * Working on a mixture of green field projects and existing codebases
 * Regular sprint planning, standups, estimation and reviews
 * Working closely with designers and product owners to refine user stories
@@ -55,6 +55,7 @@ Working in fast-paced, highly agile agency environment across a range of project
 * Contributing to new knowledge through internal presentations
 
 ### Freelance / Contracting (2010 - Present)
+
 * [YouLi](http://youli.travel) - Full stack development (NodeJS + Angular)
 * [SquareAway](http://squareaway.com) - Full stack development (Laravel + Angular)
 * [HaleyK](http://www.haleyk.com/) - Design & Development
@@ -63,17 +64,19 @@ Working in fast-paced, highly agile agency environment across a range of project
 * [MervDesign](http://mervdesign.com/) - Development
 * [Negative Films](http://www.negativefilms.net/) - Development
 
-### Fellow - Neighbourhood Justice Centre (2015 – 2016)
+### Code for Australia | Fellow - Neighbourhood Justice Centre (2015 – 2016)
 
 Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
 
-#### Major projects
+#### Major projects - Code for Australia
+
 * [User Research](https://njc.codeforaustralia.org/reports/research)
 * [Online guilty pleas prototype](https://github.com/CodeforAustralia/online-pleas)
 * [Case management / triaging prototype](https://github.com/CodeforAustralia/case-triage)
 * [Intranet prototype](https://github.com/CodeforAustralia/njc-intranet)
 
-#### Key responsibilities
+#### Key responsibilities - Code for Australia
+
 * User research and ideation
 * Rapid prototyping proposed solutions
 * UX / UI development
@@ -84,11 +87,10 @@ Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
 * Stakeholder engagement
 * Talks and presentations to promote the work of the NJC and Code for Australia
 
-### Coordinator - Online development (2011 – 2015)
-
-La Trobe University
+### La Trobe University | Coordinator - Online development (2011 – 2015)
 
 #### Major projects
+
 * Library system implementation (2014-2015) - Assisted with UX and implementation, integrating systems and content, providing solutions to technical challenges
 * Training system for students, staff and internal staff (Continually reviewed) - UX, Testing, UI and development
 * Academic referencing tool (Continually reviewed) - UX, Testing, UI and development
@@ -97,6 +99,7 @@ La Trobe University
 * Educational resources development (Continually reviewed) - Multimedia production, adobe flash and captivate development
 
 #### Key responsibilities
+
 * Contributing to maintaining the quality of Library web services according to the University and Library standards
 * Working collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
 * Exploring and prototyping emerging trends in web technologies and making recommendations in the context of Library's clients
@@ -105,30 +108,26 @@ La Trobe University
 * Managing multiple projects
 * Participation in various committees and working groups
 
-### Web Productions Officer (2009 – 2011)
-
-Centre for Teaching &amp; Learning, University of Newcastle
+### University of Newcastle | Web Productions Officer (2009 – 2011)
+**Centre for Teaching &amp; Learning**
 
 * Managing and coordinating the production of web-based promotional and informative materials associated with the Centre’s core operations, for both staff and students, in collaboration with the University’s Corporate Information Division.
 * Ongoing maintenance of all web-based resources for the centre
 * Manage communication and information dissemination projects by designing and developing web-based materials associated with the Centre’s core operations.
 * Coordinate the web-based projects to promote and inform the University and broader community about all teaching and learning events and achievements.
 
-### Library Information Common Rover (2007 – 2009)
-
-University of Newcastle
+### University of Newcastle | Library Information Common Rover (2007 – 2009)
 
 * Providing front line IT and general customer service to staff and students
 * Taking responsibility for the cleanliness and maintenance of the computing facilities at all times (24hr access)
 * Taking responsibility for the completion of set tasks allocated by other staff members (usually in the form of creating digital archives of materials or testing systems and procedures)
 
-### Checkout operator (2005 – 2007)
-
-Woolworths
+### Woolworths | Checkout operator (2005 – 2007)
 
 * Front line customer service
 
 ## References
+
 References can be provided upon request.
 
 > Please think of the trees and don't print this unless you absolutely have to :)
