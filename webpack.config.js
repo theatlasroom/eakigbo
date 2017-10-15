@@ -3,35 +3,41 @@ const webpack = require('webpack');
 const ChunkManifestPlugin = require("chunk-manifest-webpack-plugin");
 const WebpackChunkHash = require("webpack-chunk-hash");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const env = process.env.NODE_ENV || 'development';
 console.log("configured for", env);
 
 // TODO: cleanup dist dir before a new bundle is written
 const shared = {
+  entry: {
+    'bundle': [
+      './src/main.js'
+    ],
+    'styles': [
+      './src/main.css'
+    ]
+  },
   rules: [
-    { test: /\.md$/, use: [ 'markdown-loader' ]},
     {
       test: /\.(js|jsx)$/, // test to match files
-      use: 'babel-loader', // plugin to tranform the files that match
       exclude: /node_modules/
     },
-    { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
-    { test: /\.less$/, use: [ 'style-loader', 'css-loader', 'less-loader' ]},
+    {
+      test: /\.css$/,
+      use: ExtractTextPlugin.extract({
+        use: [ 'css-loader?modules', 'postcss-loader' ]
+      })
+    },
   ]
 }
 
 const dev = {
-  entry: {
-    'bundle': [
-      './src/js/main.js',
-      './src/less/style.less'
-    ]
-  },
+  entry: shared.entry,
 
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, './public/build/'),
+    path: path.resolve(__dirname, './public/'),
     publicPath: '/dist/'
   },
 
@@ -48,16 +54,12 @@ const dev = {
     new webpack.NamedModulesPlugin(),
     // prints more readable module names in the browser console on HMR updates
     new webpack.NoEmitOnErrorsPlugin(),
+    new ExtractTextPlugin("styles.css"),
   ]
 }
 
 const prod = {
-  entry: {
-    'bundle': [
-      './src/js/main.js',
-      './src/less/style.less'
-    ]
-  },
+  entry: shared.entry,
   output: {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
@@ -97,6 +99,8 @@ const prod = {
      },
     }),
     new webpack.SourceMapDevToolPlugin(),
+
+    new ExtractTextPlugin("styles.css"),
   ]
 }
 

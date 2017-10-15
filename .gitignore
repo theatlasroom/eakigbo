@@ -7,3 +7,4 @@ test/bower_components
 ignored
 yarn-error.log
 *.log
+.yarnclean
