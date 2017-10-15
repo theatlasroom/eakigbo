@@ -61,8 +61,8 @@ const dev = {
 const prod = {
   entry: shared.entry,
   output: {
-    filename: '[name].[chunkhash].js',
-    chunkFilename: '[name].[chunkhash].js',
+    filename: '[name].js',
+    chunkFilename: '[name].js',
     path: path.resolve(__dirname, './public/dist/'),
     publicPath: '/dist/'
   },
@@ -74,16 +74,16 @@ const prod = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
+    //
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: ["manifest"], //
+    //   minChunks: Infinity,
+    // }),
 
-    new webpack.optimize.CommonsChunkPlugin({
-      name: ["manifest"], //
-      minChunks: Infinity,
-    }),
-
-    new ChunkManifestPlugin({
-      filename: 'chunk-manifest.json',
-      manifestVariable: 'webpackManifest',
-    }),
+    // new ChunkManifestPlugin({
+    //   filename: 'chunk-manifest.json',
+    //   manifestVariable: 'webpackManifest',
+    // }),
 
     new webpack.optimize.UglifyJsPlugin({
       // Eliminate comments

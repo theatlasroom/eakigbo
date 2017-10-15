@@ -6,7 +6,8 @@
     "start": "node ./app",
     "dev": "nodemon ./app",
     "build": "webpack",
-    "devClient": "webpack-dev-server"
+    "devClient": "webpack-dev-server",
+    "deploy": "NODE_ENV=production npm run build && npm start"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
@@ -27,6 +28,7 @@
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "marked": "^0.3.6",

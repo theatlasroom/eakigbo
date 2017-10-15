@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const app = express();
@@ -18,13 +19,13 @@ function parseDocuments(docs){
 
 function renderOptions(){
   const data = parseDocuments(defaultDocs);
-  const isDev = app.get('env') !== 'production'
+  const isDev = process.env.NODE_ENV !== 'production'
   const bundle = isDev
     ? 'http://localhost:8080/dist/bundle.js' // assume webpack-dev-server if we are not in prod
-    : '/dist/bundle.js'
+    : '/static/dist/bundle.js'
     const styles = isDev
     ? 'http://localhost:8080/dist/styles.css'
-    : '/dist/styles.css'
+    : '/static/dist/styles.css'
   return {
     headline: 'Ezekiel Kigbo',
     title: 'Ezekiel Kigbo | Full Stack Developer - Melbourne',
