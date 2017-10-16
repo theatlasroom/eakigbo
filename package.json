@@ -7,7 +7,7 @@
     "dev": "nodemon ./app",
     "build": "webpack",
     "devClient": "webpack-dev-server",
-    "deploy": "NODE_ENV=production npm run build && npm start"
+    "deploy": "npm install --quiet && NODE_ENV=production npm run build && npm start"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
