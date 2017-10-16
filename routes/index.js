@@ -19,12 +19,13 @@ function parseDocuments(docs){
 
 function renderOptions(){
   const data = parseDocuments(defaultDocs);
-  const isDev = process.env.NODE_ENV !== 'production'
-  const bundle = isDev
-    ? 'http://localhost:8080/dist/bundle.js' // assume webpack-dev-server if we are not in prod
+  const isProduction = process.env.NODE_ENV && process.env.NODE_ENV === 'production'
+  console.log('isProduction', isProduction);
+  const bundle = !isProduction
+    ? 'http://localhost:8081/dist/bundle.js' // assume webpack-dev-server if we are not in prod
     : '/static/dist/bundle.js'
-    const styles = isDev
-    ? 'http://localhost:8080/dist/styles.css'
+    const styles = !isProduction
+    ? 'http://localhost:8081/dist/styles.css'
     : '/static/dist/styles.css'
   return {
     headline: 'Ezekiel Kigbo',

@@ -40,6 +40,9 @@ a {
   padding-right:0;
 }
 
+#additional-links { list-style-type: none; margin:0;padding:0;}
+#additional-links li { display:inline-block; margin-right:1rem; }
+
 h1, h2, h3, h4 {
   margin:0;
   padding:0;

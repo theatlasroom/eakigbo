@@ -10,3 +10,4 @@ yarn-error.log
 .yarnclean
 .env
 public/dist
+.DS_Store
