@@ -25,4 +25,4 @@ if [ ! "$(docker network ls -q -f name=$EXTERNAL_NETWORK)" ]; then
 fi
 
 # start the containers
-docker-compose -f $COMPOSE_FILE up --build
+docker-compose -f $COMPOSE_FILE up --build -d
