@@ -5,19 +5,27 @@ services:
     env_file: .env
     build: .
     command: npm run deploy
+    restart: always
+    networks:
+      - internal
+      - default
     ports:
       - ${EXPOSED_PORT}
     environment:
+      NODE_ENV: ${NODE_ENV}
       PORT: ${PORT}
       VIRTUAL_PORT: ${PORT}
-      VIRTUAL_HOST: eakigbo.me, www.eakigbo.me
-      LETSENCRYPT_HOST: eakigbo.me, www.eakigbo.me
+      VIRTUAL_HOST: ${DOMAIN}, www.${DOMAIN}
+      LETSENCRYPT_HOST: ${DOMAIN}, www.${DOMAIN}
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
       LETSENCRYPT_TEST: ${LETSENCRYPT_TEST}
     volumes:
       - .:/usr/app
 
 networks:
+  internal:
+    driver: bridge
+    internal: true
   default:
     external:
-      name: ${DOCKER_NETWORK}
+      name: ${EXTERNAL_NETWORK}
