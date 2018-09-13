@@ -14,6 +14,11 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV}
       PORT: ${PORT}
+      VIRTUAL_PORT: ${PORT}
+      VIRTUAL_HOST: ${DOMAIN}, www.${DOMAIN}
+      LETSENCRYPT_HOST: ${DOMAIN}, www.${DOMAIN}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      LETSENCRYPT_TEST: ${LETSENCRYPT_TEST}
     volumes:
       - .:/usr/app
 

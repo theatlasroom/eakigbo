@@ -3,9 +3,6 @@
 # Read our envvars
 source .env
 
-# Runs the eakigbo website and apps
-COMPOSE_FILE='docker-compose.yml'
-
 # Check the environment we are running in
 while getopts 'e:v' flag; do
   case "${flag}" in
@@ -17,12 +14,20 @@ done
 echo "Starting project $PROJECT as $NODE_ENV"
 echo "Checking network $EXTERNAL_NETWORK"
 
+COMPOSE_FILE="docker-compose.yml"
+if [[ $NODE_ENV = "production" ]]; then
+  echo "Yeah boiiii, lets get this started 🔥🔥🔥"
+  COMPOSE_FILE="production.yml"
+fi
+
 # create the njc network if it doesnt exist
 if [ ! "$(docker network ls -q -f name=$EXTERNAL_NETWORK)" ]; then
    # create the network
    echo "Network $EXTERNAL_NETWORK does not exist, creating"
    docker network create "$EXTERNAL_NETWORK"
 fi
+
+echo "Use $COMPOSE_FILE to start app in $NODE_ENV env"
 
 # start the containers
 docker-compose -f $COMPOSE_FILE up --build -d
