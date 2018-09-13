@@ -40,6 +40,21 @@ a {
   padding-right:0;
 }
 
+/* animations */
+.underline-on-hover:before {
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.underline-on-hover:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 #additional-links { list-style-type: none; margin:0;padding:0;}
 #additional-links li { display:inline-block; margin-right:1rem; }
 

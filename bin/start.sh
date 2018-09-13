@@ -14,6 +14,7 @@ done
 echo "Starting project $PROJECT as $NODE_ENV"
 echo "Checking network $EXTERNAL_NETWORK"
 
+# set the compose file based on the environment we are using
 COMPOSE_FILE="docker-compose.yml"
 if [[ $NODE_ENV = "production" ]]; then
   echo "Yeah boiiii, lets get this started 🔥🔥🔥"
@@ -30,4 +31,8 @@ fi
 echo "Use $COMPOSE_FILE to start app in $NODE_ENV env"
 
 # start the containers
-docker-compose -f $COMPOSE_FILE up --build -d
+if [[ $NODE_ENV = "production" ]]; then
+  docker-compose -f $COMPOSE_FILE up --build -d
+else
+  docker-compose -f $COMPOSE_FILE up --build
+fi

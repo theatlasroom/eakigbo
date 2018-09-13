@@ -11,3 +11,4 @@ yarn-error.log
 .env
 public/dist
 .DS_Store
+.cache

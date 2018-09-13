@@ -2,16 +2,22 @@
   "name": "eakigbo",
   "version": "2.0.0",
   "private": true,
+  "engines": {
+    "node": "9.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["./public"]
+  },
   "scripts": {
     "start": "node ./app",
-    "dev": "nodemon ./app",
-    "build": "webpack",
-    "devClient": "webpack-dev-server",
+    "dev": "NODE_ENV=development nodemon",
+    "build": "parcel build public/index.html",
     "deploy": "npm install --quiet && NODE_ENV=production npm run build && npm start"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "chunk-manifest-webpack-plugin": "^1.1.2",
+    "cross-var": "^1.1.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^2.30.1",
@@ -25,6 +31,8 @@
     "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "cookie-parser": "^1.4.3",
@@ -33,6 +41,7 @@
     "express-handlebars": "^3.0.0",
     "marked": "^0.3.6",
     "morgan": "^1.9.0",
+    "parcel-bundler": "^1.9.7",
     "serve-favicon": "^2.4.5"
   }
 }

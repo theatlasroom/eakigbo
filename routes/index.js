@@ -19,14 +19,8 @@ function parseDocuments(docs){
 
 function renderOptions(){
   const data = parseDocuments(defaultDocs);
-  const isProduction = process.env.NODE_ENV && process.env.NODE_ENV === 'production'
-  // TODO: serve static files better, probably nginx i think
-  const bundle = !isProduction
-    ? 'http://localhost:8080/dist/bundle.js' // assume webpack-dev-server if we are not in prod
-    : '/static/dist/bundle.js'
-    const styles = !isProduction
-    ? 'http://localhost:8080/dist/styles.css'
-    : '/static/dist/styles.css'
+  const bundle = '/static/dist/main.js'
+  const styles = '/static/dist/styles.css'
   return {
     headline: 'Ezekiel Kigbo',
     title: 'Ezekiel Kigbo | Full Stack Developer - Melbourne',
