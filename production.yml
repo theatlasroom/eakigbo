@@ -4,7 +4,7 @@ services:
     container_name: eakigbo_website
     env_file: .env
     build: .
-    command: npm run deploy
+    command: yarn deploy
     restart: always
     networks:
       - internal

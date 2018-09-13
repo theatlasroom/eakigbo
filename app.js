@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'development'){
     cache: true,
     contentHash: true,
     minify: true,
-    hmr: false,
+    target: 'node',
     publicUrl: `${STATIC_FILES}/dist`
   };
 
