@@ -10,8 +10,8 @@
   "scripts": {
     "start": "node ./app",
     "dev": "NODE_ENV=development nodemon",
-    "build": "parcel build src/main.js src/styles.css --out-dir public/dist",
-    "deploy": "NODE_ENV=production yarn build && yarn start"
+    "build": "npx parcel build src/main.js src/styles.css --out-dir public/dist",
+    "deploy": "NODE_ENV=production npm run build --verbose && npm run start"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
