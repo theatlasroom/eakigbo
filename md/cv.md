@@ -37,8 +37,29 @@ Bachelor of Computer Science (2006 – 2010)
 <br/>The University of Newcastle, NSW
 
 ## Work history
+### Freelance / Contracting (2010 - Present)
+* [Code for australia](http://codeforaustralia.org/)
+* [YouLi](http://youli.travel) - Full stack development (NodeJS + Angular)
+* [SquareAway](http://squareaway.com) - Full stack development (Laravel + Angular)
+* [HaleyK](http://www.haleyk.com/) - Design & Development
+* [LogoLogix](http://logologix.com.au/) - Development
+* [Seascape Design & Drafting](http://www.seascapedrafting.com/) - Development
+* [MervDesign](http://mervdesign.com/) - Development
+* [Negative Films](http://www.negativefilms.net/) - Development
 
-### Common Code | Software Developer (2016 - Present)
+### Airwallex | Senior Frontend Engineer (2017 - 2018)
+
+Working for one of Melbourne's fastest growing FinTech startups, focussing on migrating an existing webapp to React and adding new functionality, increasing test coverage and improving the quality of the codebase.
+
+#### Key responsibilities
+* Collaborating closely with product designers to plan and implement UX designs and new features
+* Working closely with backend developers on API integrations
+* Collaborating closely with QA to improve test coverage
+* Structuring new UI and breaking down existing UI into composable and unit testable components
+* Seeking out and suggesting open-source libs, tools and processes
+* Writing simple/maintainable code to satisfy complex requirements
+
+### Common Code | Software Developer (2016 - 2017)
 
 Working in a fast-paced, highly agile agency environment across a range of projects, predominately working on feature builds for new startups, shipping code regularly and working closely with clients in a cross functional team.
 
@@ -54,23 +75,10 @@ Working in a fast-paced, highly agile agency environment across a range of proje
 * Mentoring and supporting new developers and team members
 * Contributing to new knowledge through internal presentations
 
-### Freelance / Contracting (2010 - Present)
-
-* [YouLi](http://youli.travel) - Full stack development (NodeJS + Angular)
-* [SquareAway](http://squareaway.com) - Full stack development (Laravel + Angular)
-* [HaleyK](http://www.haleyk.com/) - Design & Development
-* [LogoLogix](http://logologix.com.au/) - Development
-* [Seascape Design & Drafting](http://www.seascapedrafting.com/) - Development
-* [MervDesign](http://mervdesign.com/) - Development
-* [Negative Films](http://www.negativefilms.net/) - Development
-
 ### Code for Australia | Fellow - Neighbourhood Justice Centre (2015 – 2016)
-
-Code for Australia - [Fellowship overview](https://njc.codeforaustralia.org/)
-
 #### Major projects - Code for Australia
 
-* [User Research](https://njc.codeforaustralia.org/reports/research)
+* User Research
 * [Online guilty pleas prototype](https://github.com/CodeforAustralia/online-pleas)
 * [Case management / triaging prototype](https://github.com/CodeforAustralia/case-triage)
 * [Intranet prototype](https://github.com/CodeforAustralia/njc-intranet)
