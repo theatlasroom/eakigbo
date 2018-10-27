@@ -11,47 +11,49 @@
 @media print {
   html { font-size:10px;}
   html body {
-    header, .avatar, #actions,
-    #about, #cv-trigger, #fake-cv-header, #cv-header-links, footer, #social
-    {
-      display:none;
-    }
     opacity:1;
     border-top:0;
-    margin:0 0.5em;
-    padding:0.5em 0 0 0;
-    * line-spacing:1.25rem;
-
-    header.content-section {
-      padding-bottom:0;
-      padding-top:0;
-    }
-
-    main #cv{
-      padding:0;
-      &, #cv-print-only {display:block;}
-    }
-
-    .content-section {
-      padding: 1% 2%;
-      width:100%;
-    }
-
-    h2 {
-      background:transparent;
-      color:#333;
-      font-size:1.5rem;
-      font-weight:bold;
-      margin:0;
-      padding:0;
-    }
-
-    h3, h4 {
-      font-size:1.125rem;
-      font-weight:bold;
-    }
-
-    blockquote {font-size:smaller;border-top:none;border-right:none;border-bottom:none;}
-    a {border-bottom:none;}
+    margin:0 0.25em;
+    padding:0.25em 0 0 0;
+    line-height: 2.5rem;
+    * line-spacing:2.5rem;
   }
+
+  .hide-for-print, header, .avatar, #actions, #about, #cv-trigger, #fake-cv-header, #cv-header-links, footer, #social {
+    display:none;
+  }
+
+  header.content-section {
+    padding-bottom:0;
+    padding-top:0;
+  }
+
+  main #cv{
+    padding:0;
+    &, #cv-print-only {display:block;}
+  }
+
+  .content-section {
+    padding: 1% 2%;
+    width:100%;
+  }
+
+  h2 {
+    background:transparent;
+    color:#333;
+    font-size:1.5rem;
+    font-weight:bold;
+  }
+
+  h3 {
+    text-decoration:none;
+  }
+
+  h3, h4 {
+    font-size:1.125rem;
+    font-weight:bold;
+  }
+
+  blockquote {font-size:smaller;border-top:none;border-right:none;border-bottom:none;}
+  a {border-bottom:none;}
 }

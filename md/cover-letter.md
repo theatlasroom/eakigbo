@@ -1,8 +1,8 @@
-Cover Letter - Ezekiel Angbashim Kigbo Jr
+Cover Letter - Ezekiel A. Kigbo
 ============================================================================================================================================
 
-**Portfolio: eakigbo.me**<br/>
-**Email: theatlasroom@gmail.com**
+**Portfolio: eakigbo.me**
+**Email: hi@eakigbo.me**
 
 I am a polyglot software developer with a keen interest in crafting meaningful web based applications.
 
@@ -24,7 +24,7 @@ I am driven to grow, professionally and personally and am always keen to take on
 
 Pushing the envelope, getting dirty with code, understanding clients, providing solutions that are user focused and championing cutting edge design are my passions.
 
-I have also been lucky enough to enjoy the opportunity to work across a mixtures of domains with a diverse group of people, allowing me to grow my skills in areas such as:
+I have also been lucky enough to enjoy the opportunity to work across a mixture of domains such as Finance, Law, Government and also in agencies with a diverse group of people and experiences allowing me to grow my skills in areas such as:
 
 - Agile development
 - Frontend Development

@@ -1,6 +1,6 @@
 # CV - Ezekiel Kigbo
 
-<mailto:theatlasroom@gmail.com> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
+<mailto:hi@eakigbo.me> / [@theatlasroom](http://twitter.com/theatlasroom) / [eakigbo.me](http://eakigbo.me)
 
 I am a software developer with a keen interest in crafting meaningful web based applications.
 
