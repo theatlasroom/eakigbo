@@ -87,6 +87,9 @@ Working in a fast-paced, highly agile agency environment across a range of proje
 
 #### Key responsibilities - Code for Australia
 
+* Full stack development
+  - Frontend: Angular 1.x
+  - NodeJS: ExpressJS 
 * User research and ideation
 * Rapid prototyping proposed solutions
 * UX / UI development
@@ -104,12 +107,15 @@ Working in a fast-paced, highly agile agency environment across a range of proje
 * Library system implementation (2014-2015) - Assisted with UX and implementation, integrating systems and content, providing solutions to technical challenges
 * Training system for students, staff and internal staff (Continually reviewed) - UX, Testing, UI and development
 * Academic referencing tool (Continually reviewed) - UX, Testing, UI and development
-* Library website redevelopment (2013?) - Working within a team to assist with Information architecture, UX, Testing, Implementation
+* Library website redevelopment (2013) - Working within a team to assist with Information architecture, UX, Testing, Implementation
 * Skills Essentials (2013) - Developing reusable, responsive, mobile-first activities for e-learning
 * Educational resources development (Continually reviewed) - Multimedia production, adobe flash and captivate development
 
 #### Key responsibilities
 
+* Full stack development
+  - Frontend: BackboneJS, Angular 1.x, jQuery
+  - PHP: Codeigniter, Laravel
 * Contributing to maintaining the quality of Library web services according to the University and Library standards
 * Working collaboratively with the Library Web Coordinator and other Library staff in the application of web technologies to library services.
 * Exploring and prototyping emerging trends in web technologies and making recommendations in the context of Library's clients
