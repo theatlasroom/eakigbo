@@ -37,7 +37,10 @@ Bachelor of Computer Science (2006 – 2010)
 <br/>The University of Newcastle, NSW
 
 ## Work history
-### Freelance / Contracting (2017 - Present)
+### GitLab | Frontend Engineer (2019 - Present)
+Working remotely for [GitLab](https://gitlab.com/ekigbo) as part of the manage team.
+
+### Freelance / Contracting (2017 - 2019)
 * [Code for australia](http://codeforaustralia.org/)
 
 ### Airwallex | Senior Frontend Engineer (2017 - 2018)

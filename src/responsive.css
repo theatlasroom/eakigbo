@@ -16,7 +16,6 @@
     margin:0 0.25em;
     padding:0.25em 0 0 0;
     line-height: 2.5rem;
-    * line-spacing:2.5rem;
   }
 
   .hide-for-print, header, .avatar, #actions, #about, #cv-trigger, #fake-cv-header, #cv-header-links, footer, #social {
