@@ -3,4 +3,4 @@ You can find me on [linkedin](https://au.linkedin.com/in/theatlasroom), [gitlab]
 
 Current passions: VueJS, ReasonML, React + Redux, Go-lang, Rust-lang and Docker.
 
-You browse my previous [talks and presentations](https://theatlasroom.github.io/presentations/) online.
+You can browse my previous [talks and presentations](https://theatlasroom.github.io/presentations/) online.
