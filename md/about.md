@@ -2,3 +2,5 @@ I'm a passionate Full stack developer, musician and photographer based in [Melbo
 You can find me on [linkedin](https://au.linkedin.com/in/theatlasroom), [gitlab](https://gitlab.com/ekigbo), [github](https://github.com/theatlasroom) or [twitter](https://twitter.com/theatlasroom).
 
 Current passions: VueJS, ReasonML, React + Redux, Go-lang, Rust-lang and Docker.
+
+You browse my previous [talks and presentations](https://theatlasroom.github.io/presentations/) online.
