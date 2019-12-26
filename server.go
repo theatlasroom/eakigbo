@@ -16,7 +16,10 @@ type page struct {
 	data     map[string]string
 }
 
-func render(template string, data map[string]string){}
+func render(w http.ResponseWriter, tmpl, data map[string]string){
+	tmpl, err := template.New("foo").Parse
+	err = tmpl.Execute(w, data)
+}
 
 func cvRoute(w http.ResponseWriter, r *http.Request) {}
 func indexRoute(w http.ResponseWriter, r *http.Request) {
