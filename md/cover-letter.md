@@ -1,5 +1,4 @@
-Cover Letter - Ezekiel A. Kigbo
-============================================================================================================================================
+# Cover Letter - Ezekiel A. Kigbo
 
 **Portfolio: eakigbo.me**
 **Email: hi@eakigbo.me**

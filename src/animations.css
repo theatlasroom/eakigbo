@@ -3,32 +3,57 @@
   from {
     margin-top: -100%;
     width: 100%;
-    filter:grayscale(100%);
+    filter: grayscale(100%);
   }
 
   to {
     margin-top: 0%;
     width: 100%;
-    filter:grayscale(0%);
+    filter: grayscale(0%);
   }
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  25% { opacity: 0.25; }
-  50% { opacity: 0.5; }
-  75% { opacity: 0.75; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-header { animation-duration: 1s;  animation-name: fadein; }
-#avatar { animation-duration: 1s;  animation-name: fadein; }
-#headline { animation-duration: 1s;  animation-name: fadein; }
-#body-content { animation-duration: 3s;  animation-name: fadein; }
-footer { animation-duration: 5s;  animation-name: fadein; }
+header {
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+#avatar {
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+#headline {
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+#body-content {
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+footer {
+  animation-duration: 5s;
+  animation-name: fadein;
+}
 
 #avatar img:hover {
-  filter:grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .content a {
@@ -37,7 +62,7 @@ footer { animation-duration: 5s;  animation-name: fadein; }
 }
 
 .content a:before {
-  background-color:#D14841;
+  background-color: #d14841;
   content: "";
   position: absolute;
   width: 100%;
