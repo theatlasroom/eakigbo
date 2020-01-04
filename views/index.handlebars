@@ -1,7 +1,8 @@
+{{define "body"}}
 <div class="content-section">
   <div class="content">
     <section id="about">
-      {{{data.about}}}
+      {{.About | safeHTML}}
     </section>
   </div>
 </div>
@@ -9,9 +10,13 @@
   <div class="content">
     <ul id="additional-links">
       <li><a class="button underline-on-hover" href="/cv">View my CV</a></li>
-      <li><a class="button underline-on-hover button-secondary" href="http://github.com/theatlasroom/tidbits">Knowledge repository</a></li>
-      <li><a class="button underline-on-hover button-secondary" href="http://bandcamp.com/theatlasroom">Bandcamp</a></li>
-      <li><a class="button underline-on-hover button-secondary" href="http://soundcloud.com/theatlasroom">SoundCloud</a></li>
+      <li><a class="button underline-on-hover button-secondary" href="http://github.com/theatlasroom/tidbits">Knowledge
+          repository</a></li>
+      <li><a class="button underline-on-hover button-secondary" href="http://bandcamp.com/theatlasroom">Bandcamp</a>
+      </li>
+      <li><a class="button underline-on-hover button-secondary" href="http://soundcloud.com/theatlasroom">SoundCloud</a>
+      </li>
     </ul>
   </div>
 </div>
+{{end}}

@@ -1,3 +1,4 @@
+{{define "layout"}}
 <!doctype html>
 <html lang="en">
 
@@ -31,7 +32,7 @@
       </section>
     </header>
     <section id="body-content">
-      {{.Body}}
+      {{template "body" .}}
     </section>
     <footer class="content-section">
       <section class="content">
@@ -69,3 +70,4 @@
 </body>
 
 </html>
+{{end}}
