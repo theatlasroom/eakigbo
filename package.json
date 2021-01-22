@@ -17,6 +17,7 @@
     "autoprefixer": "^7.2.6",
     "babel-core": "^6.26.3",
     "cross-var": "^1.1.0",
+    "node-forge": "^0.10.0",
     "nodemon": "^1.19.4"
   },
   "dependencies": {
